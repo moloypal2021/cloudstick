@@ -6,7 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Flickity.CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!-- Tailwind.css -->
     <link rel="stylesheet" href="./assets/css/tailwind.css">
+
+    <!-- Flickity.js -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
 </head>
 
 <body>
@@ -147,44 +157,370 @@
     <!-- CTA Section End -->
 
     <!-- Features Section Start -->
-    <section class="container mx-auto px-6 xl:px-25">
+    <section class="container mx-auto px-6 xl:px-25 mb-12 sm:mb-14 md:mb-20 lg:mb-[104px]">
         <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-46 text-dark-1 text-center mb-14 sm:mb-16 md:mb-20">Key
             Featues</h1>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-14 lg:gap-16 xl:gap-20 2xl:gap-24">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-14 lg:gap-16 xl:gap-20 2xl:gap-24">
             <div>
-                <svg width="73" height="69" viewBox="0 0 73 69" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <ellipse cx="36.4244" cy="33.6823" rx="35.4266" ry="33.6824"
-                        transform="rotate(-180 36.4244 33.6823)" fill="url(#paint0_linear_214_234)" />
-                    <path
-                        d="M52.9321 17.1276L70.6453 41.9612C67.6454 57.3752 49.6296 67.366 38.5212 67.366L20.0315 48.7683L36.13 38.5397L29.013 32.8257L52.9321 17.1276Z"
-                        fill="#767676" fill-opacity="0.32" />
-                    <rect x="18.3979" y="15.9829" width="36.6275" height="35.966" rx="8" fill="white" />
-                    <path
-                        d="M38.0588 22.9873L46.5691 24.9416C46.9316 25.0235 47.2529 25.2164 47.4799 25.4886C47.7069 25.7607 47.8261 26.0958 47.8179 26.4386C47.3284 43.1154 36.7099 45.67 36.7099 45.67C36.7099 45.67 26.0915 43.1154 25.602 26.4386C25.5936 26.0962 25.7124 25.7613 25.9389 25.4892C26.1654 25.2171 26.486 25.024 26.8479 24.9416L35.3583 22.9873C36.2448 22.7835 37.1723 22.7835 38.0588 22.9873V22.9873Z"
-                        fill="white" stroke="url(#paint1_linear_214_234)" stroke-width="3.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <path
-                        d="M37.0132 15.9849H47.0267C51.445 15.9849 55.0267 19.5666 55.0267 23.9849V43.9508C55.0267 48.3691 51.445 51.9508 47.0267 51.9508H37.0132V15.9849Z"
-                        fill="#494949" fill-opacity="0.09" />
-                    <defs>
-                        <linearGradient id="paint0_linear_214_234" x1="36.4244" y1="-0.000114441" x2="36.4244"
-                            y2="67.3647" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#44D695" />
-                            <stop offset="1" stop-color="#185FA5" />
-                        </linearGradient>
-                        <linearGradient id="paint1_linear_214_234" x1="27.9563" y1="23.1276" x2="39.1203" y2="50.1855"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#1A65A4" />
-                            <stop offset="1" stop-color="#44D695" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-
+                <img src="./assets/images/features-icon-1.svg" alt="" class="w-[72px] mb-1">
+                <h6 class="text-base font-semibold text-dark-1 mb-5">Advanced Security Firewall</h6>
+                <p class="text-sm text-dark-1">All CloudStick hosted servers are secured and protected by an advanced OS
+                    – level firewall that weeds out or blocks malicious intruders and unauthorized traffic. Servers also
+                    feature advanced filter criteria and settings</p>
+            </div>
+            <div>
+                <img src="./assets/images/features-icon-2.svg" alt="" class="w-[72px] mb-1">
+                <h6 class="text-base font-semibold text-dark-1 mb-5">Easy PHP & stack Modifications</h6>
+                <p class="text-sm text-dark-1">Speedy installations of PHP extensions, Apache modules, and other
+                    packages. With just a few clicks the solution automatically compiles and deploys the Web Application
+                    extensions.</p>
+            </div>
+            <div>
+                <img src="./assets/images/features-icon-3.svg" alt="" class="w-[72px] mb-1">
+                <h6 class="text-base font-semibold text-dark-1 mb-5">Advanced Statistics & Reports</h6>
+                <p class="text-sm text-dark-1">Gain valuable insights into logs and metrics, instantly. Generate key
+                    reports with advanced stats on Country wise, Browser-wise and IP-wise access logs, aggregate overall
+                    bandwidth utilization, memory, disk usage and other metrics</p>
+            </div>
+            <div>
+                <img src="./assets/images/features-icon-4.svg" alt="" class="w-[72px] mb-1">
+                <h6 class="text-base font-semibold text-dark-1 mb-5">Readable Automated Backups</h6>
+                <p class="text-sm text-dark-1">We know how important data backups are to any business! Schedule
+                    automatic backups for web apps or databases in our highly secure backup facility that meets
+                    industry-recommended security standards.</p>
+            </div>
+            <div>
+                <img src="./assets/images/features-icon-1.svg" alt="" class="w-[72px] mb-1">
+                <h6 class="text-base font-semibold text-dark-1 mb-5">Advanced Security Firewall</h6>
+                <p class="text-sm text-dark-1">All CloudStick hosted servers are secured and protected by an advanced OS
+                    – level firewall that weeds out or blocks malicious intruders and unauthorized traffic. Servers also
+                    feature advanced filter criteria and settings</p>
+            </div>
+            <div>
+                <img src="./assets/images/features-icon-2.svg" alt="" class="w-[72px] mb-1">
+                <h6 class="text-base font-semibold text-dark-1 mb-5">Easy PHP & stack Modifications</h6>
+                <p class="text-sm text-dark-1">Speedy installations of PHP extensions, Apache modules, and other
+                    packages. With just a few clicks the solution automatically compiles and deploys the Web Application
+                    extensions.</p>
             </div>
         </div>
     </section>
     <!-- Features Section End -->
+
+
+    <!-- Pricing Section Start -->
+    <section class="bg-light-1 py-12">
+        <div class="container mx-auto px-6 xl:px-25">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-46 text-center text-dark-1 mb-12">Pricing </h1>
+            <p class="text-base font-semibold text-dark-1 text-center mb-[70px]">Most affordable in the industry by far.
+                Choose plans that fit your needs.</p>
+            <div class="flex flex-wrap lg:flex-nowrap items-center justify-center mb-6">
+                <div
+                    class="max-w-[305px] w-full bg-white border border-gray-1 pt-2.5 pb-8 px-6 sm:px-12 rounded-lg shadow-1 my-5 sm:m-5 xl:m-8 2xl:m-9">
+                    <h4 class="text-2xl font-semibold text-dark-1 text-center mb-3">Free</h4>
+                    <div class="flex items-end justify-center mb-3">
+                        <h1 class="text-42 leading-10 font-semibold text-transparent bg-clip-text bg-2 mb-1">$0</h1>
+                        <p class="text-sm leading-10 font-semibold text-transparent bg-clip-text bg-2">/month</p>
+                    </div>
+                    <ul class="space-y-4 mb-7">
+                        <li class="text-xs text-black">1 Server</li>
+                        <li class="text-xs text-black">Unlimited Hosting Accounts</li>
+                        <li class="text-xs text-black">One-click SSL</li>
+                        <li class="text-xs text-black">Server Firewall</li>
+                        <li class="text-xs text-black">Sub Domains</li>
+                        <li class="text-xs text-black">EasyPHP</li>
+                        <li class="text-xs text-black">User Quota
+                        <li class="text-xs text-black">Multiple PHP Versions</li>
+                        <li class="text-xs text-black">Git deployment</li>
+                        <li class="text-xs text-black">SFTP & Additional FTP Accounts</li>
+                    </ul>
+
+                    <div class="text-center">
+                        <a href="#" class="text-sm font-semibold text-blue-2">More</a>
+                    </div>
+                </div>
+
+                <div
+                    class="max-w-[332px] w-full bg-3 border border-gray-1 pt-2.5 pb-8 px-6 sm:px-14 rounded-lg shadow-1 my-5 sm:m-5 xl:m-8 2xl:m-9 relative overflow-hidden">
+                    <div class="relative z-10">
+                        <h4 class="text-2xl font-semibold text-white text-center mb-5">Standard</h4>
+                        <div class="flex items-end justify-center mb-5">
+                            <h1 class="text-42 leading-10 font-semibold text-white mb-1">$6.50</h1>
+                            <p class="text-sm leading-10 font-semibold text-white">/month</p>
+                        </div>
+                        <ul class="space-y-4 mb-10">
+                            <li class="text-xs text-white">1 Server</li>
+                            <li class="text-xs text-white">Unlimited Hosting Accounts</li>
+                            <li class="text-xs text-white">One-click SSL</li>
+                            <li class="text-xs text-white">Server Firewall</li>
+                            <li class="text-xs text-white">Sub Domains</li>
+                            <li class="text-xs text-white">EasyPHP</li>
+                            <li class="text-xs text-white">User Quota
+                            <li class="text-xs text-white">Multiple PHP Versions</li>
+                            <li class="text-xs text-white">Git deployment</li>
+                            <li class="text-xs text-white">SFTP & Additional FTP Accounts</li>
+                        </ul>
+
+                        <div class="text-center">
+                            <a href="#" class="text-sm font-semibold text-white">More</a>
+                        </div>
+                    </div>
+                    <div class="absolute right-0 top-0 flex justify-center mr-4">
+                        <p class="text-xs text-white [writing-mode:vertical-rl] absolute inset-0 m-2">Most Popular</p>
+                        <svg width="31" height="109" viewBox="0 0 31 109" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M31 0L31 109C12.9167 93.4286 18.7292 93.4286 -1.74457e-06 109L3.01997e-06 -1.35505e-06L31 0Z"
+                                fill="#F2911F" />
+                        </svg>
+                    </div>
+                    <div class="absolute inset-0 w-1/2 ml-auto bg-white/10"></div>
+                </div>
+
+
+
+                <div
+                    class="max-w-[305px] w-full bg-white border border-gray-1 pt-2.5 pb-8 px-6 sm:px-12 rounded-lg shadow-1 my-5 sm:m-5 xl:m-8 2xl:m-9">
+                    <h4 class="text-2xl font-semibold text-dark-1 text-center mb-3">Pro</h4>
+                    <div class="flex items-end justify-center mb-3">
+                        <h1 class="text-42 leading-10 font-semibold text-transparent bg-clip-text bg-2 mb-1">$12.50</h1>
+                        <p class="text-sm leading-10 font-semibold text-transparent bg-clip-text bg-2">/month</p>
+                    </div>
+                    <ul class="space-y-4 mb-7">
+                        <li class="text-xs text-black">1 Server</li>
+                        <li class="text-xs text-black">Unlimited Hosting Accounts</li>
+                        <li class="text-xs text-black">One-click SSL</li>
+                        <li class="text-xs text-black">Server Firewall</li>
+                        <li class="text-xs text-black">Sub Domains</li>
+                        <li class="text-xs text-black">EasyPHP</li>
+                        <li class="text-xs text-black">User Quota
+                        <li class="text-xs text-black">Multiple PHP Versions</li>
+                        <li class="text-xs text-black">Git deployment</li>
+                        <li class="text-xs text-black">SFTP & Additional FTP Accounts</li>
+                    </ul>
+
+                    <div class="text-center">
+                        <a href="#" class="text-sm font-semibold text-blue-2">More</a>
+                    </div>
+                </div>
+            </div>
+
+            <h6 class="text-base font-semibold text-center text-blue-3">View full price breakup</h6>
+
+        </div>
+    </section>
+    <!-- Pricing Section End -->
+
+
+    <!-- Testmonial Section Start -->
+    <section class="container mx-auto px-6 2xl:px-[144px] mb-10">
+        <div class="homepage-testmonial w-full" x-data="carousel()">
+
+            <div class="flex items-center justify-center space-x-5 md:space-x-7 mb-[72px]">
+                <button class="min-w-[40px]" @click="prev()">
+                    <svg class="w-6 sm:w-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25 10L15 20L25 30" stroke="#3DA0A4" stroke-width="5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="text-center">
+                    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-46 text-dark-1">What Our Clients Say About Us
+                    </h1>
+                </div>
+
+                <button class="min-w-[40px]" @click="next()">
+                    <svg class="w-6 sm:w-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 30L25 20L15 10" stroke="#3DA0A4" stroke-width="5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+
+                </button>
+            </div>
+
+
+            <div class="w-full items-center relative" x-ref="carousel">
+                <div class="carousel-cell">
+                    <div class="relative w-full h-full">
+                        <img src="./assets/images/home-testmonial-shape-1.svg" alt="" class="w-full normal-shape">
+                        <img src="./assets/images/home-testmonial-shape-2.svg" alt="" class="w-full selected-shape">
+                        <div class="cell-content absolute inset-0 z-10">
+                            <img src="./assets/images/avater-1.jpg" alt=""
+                                class="avater mx-auto object-cover rounded-full">
+                            <h5 class="username text-center">Sree kutty</h5>
+                            <p class="desg text-center">Lead designer</p>
+                            <svg class="quote mx-auto" viewBox="0 0 23 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.876 11.02c-.452.001-.897.12-1.29.342a8.824 8.824 0 0 1 2.665-3.667.673.673 0 0 0-.856-1.039c-2.444 1.987-3.532 4.737-3.532 6.442a3.104 3.104 0 0 0 1.876 2.829c.358.174.75.265 1.149.269a2.59 2.59 0 0 0 2.507-3.609 2.59 2.59 0 0 0-2.507-1.567h-.012ZM14.684 11.02a2.622 2.622 0 0 0-1.29.343 8.862 8.862 0 0 1 2.659-3.667.672.672 0 1 0-.85-1.039c-2.444 1.986-3.532 4.736-3.532 6.441a3.105 3.105 0 0 0 1.833 2.817c.368.18.771.271 1.18.27a2.591 2.591 0 1 0 0-5.177v.013Z"
+                                    fill="#3DA0A4" />
+                            </svg>
+                            <p class="paragraph text-center text-dark-1">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget
+                                nibh
+                                in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus
+                                pellentesque enim </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="relative w-full h-full">
+                        <img src="./assets/images/home-testmonial-shape-3.svg" alt="" class="w-full normal-shape">
+                        <img src="./assets/images/home-testmonial-shape-2.svg" alt="" class="w-full selected-shape">
+                        <div class="cell-content absolute inset-0 z-10">
+                            <img src="./assets/images/avater-2.jpg" alt=""
+                                class="avater mx-auto object-cover rounded-full">
+                            <h5 class="username text-center">Ashwini Mohan</h5>
+                            <p class="desg text-center">Lead designer</p>
+                            <svg class="quote mx-auto" viewBox="0 0 23 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.876 11.02c-.452.001-.897.12-1.29.342a8.824 8.824 0 0 1 2.665-3.667.673.673 0 0 0-.856-1.039c-2.444 1.987-3.532 4.737-3.532 6.442a3.104 3.104 0 0 0 1.876 2.829c.358.174.75.265 1.149.269a2.59 2.59 0 0 0 2.507-3.609 2.59 2.59 0 0 0-2.507-1.567h-.012ZM14.684 11.02a2.622 2.622 0 0 0-1.29.343 8.862 8.862 0 0 1 2.659-3.667.672.672 0 1 0-.85-1.039c-2.444 1.986-3.532 4.736-3.532 6.441a3.105 3.105 0 0 0 1.833 2.817c.368.18.771.271 1.18.27a2.591 2.591 0 1 0 0-5.177v.013Z"
+                                    fill="#3DA0A4" />
+                            </svg>
+                            <p class="paragraph text-center text-dark-1">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget
+                                nibh
+                                in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus
+                                pellentesque enim </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-cell">
+                    <div class="relative w-full h-full">
+                        <img src="./assets/images/home-testmonial-shape-3.svg" alt="" class="w-full normal-shape">
+                        <img src="./assets/images/home-testmonial-shape-2.svg" alt="" class="w-full selected-shape">
+                        <div class="cell-content absolute inset-0 z-10">
+                            <img src="./assets/images/avater-3.jpg" alt=""
+                                class="avater mx-auto object-cover rounded-full">
+                            <h5 class="username text-center">Anjali Mishra</h5>
+                            <p class="desg text-center">Lead designer</p>
+                            <svg class="quote mx-auto" viewBox="0 0 23 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.876 11.02c-.452.001-.897.12-1.29.342a8.824 8.824 0 0 1 2.665-3.667.673.673 0 0 0-.856-1.039c-2.444 1.987-3.532 4.737-3.532 6.442a3.104 3.104 0 0 0 1.876 2.829c.358.174.75.265 1.149.269a2.59 2.59 0 0 0 2.507-3.609 2.59 2.59 0 0 0-2.507-1.567h-.012ZM14.684 11.02a2.622 2.622 0 0 0-1.29.343 8.862 8.862 0 0 1 2.659-3.667.672.672 0 1 0-.85-1.039c-2.444 1.986-3.532 4.736-3.532 6.441a3.105 3.105 0 0 0 1.833 2.817c.368.18.771.271 1.18.27a2.591 2.591 0 1 0 0-5.177v.013Z"
+                                    fill="#3DA0A4" />
+                            </svg>
+                            <p class="paragraph text-center text-dark-1">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget
+                                nibh
+                                in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus
+                                pellentesque enim </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="relative w-full h-full">
+                        <img src="./assets/images/home-testmonial-shape-3.svg" alt="" class="w-full normal-shape">
+                        <img src="./assets/images/home-testmonial-shape-2.svg" alt="" class="w-full selected-shape">
+                        <div class="cell-content absolute inset-0 z-10">
+                            <img src="./assets/images/avater-3.jpg" alt=""
+                                class="avater mx-auto object-cover rounded-full">
+                            <h5 class="username text-center">Anjali Mishra</h5>
+                            <p class="desg text-center">Lead designer</p>
+                            <svg class="quote mx-auto" viewBox="0 0 23 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.876 11.02c-.452.001-.897.12-1.29.342a8.824 8.824 0 0 1 2.665-3.667.673.673 0 0 0-.856-1.039c-2.444 1.987-3.532 4.737-3.532 6.442a3.104 3.104 0 0 0 1.876 2.829c.358.174.75.265 1.149.269a2.59 2.59 0 0 0 2.507-3.609 2.59 2.59 0 0 0-2.507-1.567h-.012ZM14.684 11.02a2.622 2.622 0 0 0-1.29.343 8.862 8.862 0 0 1 2.659-3.667.672.672 0 1 0-.85-1.039c-2.444 1.986-3.532 4.736-3.532 6.441a3.105 3.105 0 0 0 1.833 2.817c.368.18.771.271 1.18.27a2.591 2.591 0 1 0 0-5.177v.013Z"
+                                    fill="#3DA0A4" />
+                            </svg>
+                            <p class="paragraph text-center text-dark-1">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget
+                                nibh
+                                in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus
+                                pellentesque enim </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testmonial Section End -->
+
+
+    <!-- Rating Trustpilot Section Start -->
+    <section class="container mx-auto px-6 xl:px-2 xl:max-w-screen-lg mt-10 mb-16 sm:mb-20 md:mb-28 lg:mb-[150px]">
+        <div
+            class="flex lg:flex-row flex-col space-y-12 lg:space-y-0 lg:space-x-12 xl:space-x-[75px] items-center lg:items-start">
+
+            <div class="max-w-[345px] w-full text-center">
+                <img src="./assets/images/trustpilot.png" alt="" class="w-full mb-4">
+                <a href="#" class="text-base font-semibold  text-blue-3">View all Reviews</a>
+            </div>
+            <div class="w-full">
+                <h4 class="text-2xl font-semibold text-dark-1 mb-2.5">Rated 5 star on Trustpilot</h4>
+                <p class="text-sm text-dark-1">CloudStick offers a wide portfolio of proven cloud delivery and
+                    management features, advanced security, comprehensive reports and statistics, Web App controls,
+                    integrations and more.
+                    <br><br>
+                    Our expert web architects will tailor hosting solutions with the appropriate agility that your
+                    enterprise needs to scale and grow.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Rating Trustpilot Section End -->
+
+
+
+    <!-- Newsletter Section Start -->
+    <section class="container mx-auto px-6 2xl:px-0 xl:max-w-screen-lg mb-[104px]">
+        <div class="bg-blue-1 w-full pt-11 pb-9 px-6 sm:px-16">
+            <div class="max-w-3xl mx-auto">
+                <h4 class="text-2xl font-semibold text-white mb-5 text-center lg:text-start">Subscribe to our News
+                    Letter for more content.</h4>
+                <div class="flex flex-col lg:flex-row items-center lg:space-x-2 space-y-2 lg:space-y-0">
+                    <input type="text"
+                        class="w-full border border-white bg-transparent py-3.5 px-6 rounded-lg text-sm text-white placeholder:text-white"
+                        placeholder="Email ID">
+
+                    <button
+                        class="text-sm font-semibold text-white px-12 xl:px-[70px] py-3.5 bg-1 rounded-lg">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Newsletter Section End -->
+
+    <script>
+        function carousel() {
+            return {
+                active: 0,
+                init() {
+                    var flkty = new Flickity(this.$refs.carousel, {
+                        wrapAround: true,
+                        prevNextButtons: false,
+                        pageDots: true,
+                        cellAlign: 'center',
+                        contain: true,
+                        adaptiveHeight: true,
+                        resize: true
+                    });
+                    flkty.on('change', i => {
+                        this.active = i;
+                        flkty.reloadCells();
+                    });
+                    this.next();
+                },
+                prev() {
+                    var flkty = new Flickity(this.$refs.carousel);
+                    flkty.previous();
+                    flkty.reloadCells();
+
+                },
+                next() {
+                    var flkty = new Flickity(this.$refs.carousel);
+                    flkty.next();
+                    flkty.reloadCells();
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>

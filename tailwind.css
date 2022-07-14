@@ -9,3 +9,224 @@
     @apply font-poppins;
   }
 }
+
+.homepage-testmonial .carousel-cell {
+  min-width: 344px;
+  width: 344px;
+  height: 377px;
+  min-height: 377px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 16px;
+}
+.homepage-testmonial .cell-content {
+  width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.homepage-testmonial .avater {
+  width: 76px;
+  height: 76px;
+  margin-bottom: 12px;
+}
+
+.homepage-testmonial .username {
+  font-size: 18px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #313131;
+}
+.homepage-testmonial .desg {
+  font-size: 12px;
+  line-height: 18px;
+  color: #313131;
+}
+.homepage-testmonial .quote {
+  width: 22px;
+  margin-bottom: 4px;
+}
+
+.homepage-testmonial .paragraph {
+  font-size: 12px;
+  line-height: 18px;
+  color: #313131;
+}
+
+.homepage-testmonial .selected-shape {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+.homepage-testmonial .normal-shape {
+  position: absolute;
+  inset: 0;
+  opacity: 1;
+}
+
+.homepage-testmonial .is-selected.carousel-cell {
+  min-width: 434px !important;
+  width: 434px !important;
+  height: 433px !important;
+  min-height: 433px !important;
+}
+
+.homepage-testmonial .is-selected .cell-content {
+  width: 346px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-30px);
+}
+
+.homepage-testmonial .is-selected .avater {
+  width: 102px;
+  height: 102px;
+  margin-bottom: 20px;
+}
+
+.homepage-testmonial .is-selected .username {
+  font-size: 24px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  color: #fff;
+}
+.homepage-testmonial .is-selected .desg {
+  font-size: 18px;
+  line-height: 27px;
+  color: #fff;
+}
+.homepage-testmonial .is-selected .quote {
+  width: 36px;
+  margin-bottom: 8px;
+}
+.homepage-testmonial .is-selected .paragraph {
+  font-size: 15px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.homepage-testmonial .is-selected .selected-shape {
+  opacity: 1 !important;
+}
+
+.homepage-testmonial .is-selected .normal-shape {
+  opacity: 0;
+}
+
+/* position dots in carousel */
+.homepage-testmonial .flickity-page-dots {
+  top: 0px;
+  transform: translateY(-50px);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 16px;
+}
+/* white circles */
+.homepage-testmonial .flickity-page-dots .dot {
+  width: 8px;
+  height: 8px;
+  opacity: 1;
+  background: #3da0a4;
+}
+/* fill-in selected dot */
+.homepage-testmonial .flickity-page-dots .dot.is-selected {
+  background: transparent;
+  border: 4px solid #3da0a4;
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 639px) {
+  /* Carousel Dots */
+  .homepage-testmonial .flickity-page-dots .dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  /* fill-in selected dot */
+  .homepage-testmonial .flickity-page-dots .dot.is-selected {
+    border: 3px solid #3da0a4;
+    width: 12px;
+    height: 12px;
+  }
+
+  /* Carousel Cell */
+  .homepage-testmonial .carousel-cell {
+    min-width: 250px !important;
+    width: 250px !important;
+    height: 290px !important;
+    min-height: 290px !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .homepage-testmonial .cell-content {
+    width: 190px;
+    transform: translateY(10px);
+  }
+
+  .homepage-testmonial .avater {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 4px;
+  }
+
+  .homepage-testmonial .username {
+    font-size: 12px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .homepage-testmonial .desg {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .homepage-testmonial .quote {
+    width: 16px;
+    margin-bottom: 2px;
+  }
+  .homepage-testmonial .paragraph {
+    font-size: 9px;
+    line-height: 12px;
+  }
+
+  .homepage-testmonial .is-selected.carousel-cell {
+    min-width: 270px !important;
+    width: 270px !important;
+    height: 290px !important;
+    min-height: 290px !important;
+  }
+
+  .homepage-testmonial .is-selected .cell-content {
+    width: 240px;
+    transform: translateY(-20px);
+  }
+
+  .homepage-testmonial .is-selected .avater {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 8px;
+  }
+
+  .homepage-testmonial .is-selected .username {
+    font-size: 16px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .homepage-testmonial .is-selected .desg {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .homepage-testmonial .is-selected .quote {
+    width: 20px;
+    margin-bottom: 2px;
+  }
+  .homepage-testmonial .is-selected .paragraph {
+    font-size: 12px;
+    line-height: 16px;
+    color: #ffffff;
+  }
+}
