@@ -20,6 +20,9 @@ module.exports = {
         },
         gray: {
           1: "#EAEAEA",
+          2: "#C4C4C4",
+          3: "#969696",
+          4: "#B1B1B1",
         },
       },
       fontSize: {
@@ -46,12 +49,17 @@ module.exports = {
         1: "linear-gradient(122.65deg, #1B67A5 16.75%, #44D695 82.53%)",
         2: "linear-gradient(180deg, #0121AE 2%, #44D695 73.61%)",
         3: "linear-gradient(159.08deg, #1B67A4 24.15%, #44D695 100%)",
+        4: "linear-gradient(165.14deg, #1B67A4 -0.17%, #44D695 99.52%)",
       },
       boxShadow: {
         1: "0px 10px 25px rgba(0, 0, 0, 0.05)",
         2: "0px 4px 40px rgba(0, 0, 0, 0.11)",
+        3: "-4px 4px 4px rgba(0, 0, 0, 0.08)",
       },
     },
   },
-  plugins: [require("@tailwindcss/aspect-ratio")],
+  plugins: [
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/aspect-ratio"),
+  ],
 };

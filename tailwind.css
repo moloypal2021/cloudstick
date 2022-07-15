@@ -10,6 +10,12 @@
   }
 }
 
+@layer utilities {
+  .black-radio-input {
+    @apply w-5 h-5 appearance-none relative border-2 border-gray-2 bg-transparent checked:bg-transparent focus-within:ring-black focus-within:border-2 focus-within:border-black  focus-within:text-transparent rounded-full flex items-center justify-center before:content-[''] before:bg-transparent before:w-3 before:h-3 before:absolute before:rounded-full checked:border-black checked:before:bg-black;
+  }
+}
+
 .homepage-testmonial .carousel-cell {
   min-width: 344px;
   width: 344px;

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Flickity.CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!-- Tailwind.css -->
+    <link rel="stylesheet" href="./assets/css/tailwind.css">
+
+    <!-- Flickity.js -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
+</head>
+
+<body>
+    <!-- Heros Section Start -->
+    <section class="relative mb-20 sm:mb-24 md:mb-32 lg:mb-[152px]">
+        <div class="bg-blue-1 absolute inset-x-0 top-0 h-[900px] lg:h-[700px] -z-10"></div>
+        <div class="container mx-auto px-6 xl:px-25 pt-20 sm:pt-24 md:pt-28 lg:pt-[136px]">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-46 text-center font-semibold text-white mb-6">Contact Us
+            </h1>
+            <p class="text-sm sm:text-base text-white text-center mb-12 xl:px-16">Our Mission is to help start-ups and
+                developers build and manage their own servers with modern and advanced technologies, in just few clicks,
+                super quick and easy.</p>
+
+            <!-- Contact Form start -->
+            <div class="grid lg:grid-cols-12">
+                <div class="lg:col-span-4 bg-4 py-32 px-6 sm:px-12 xl:px-14">
+                    <h1 class="text-2xl sm:text-3xl md:text-4xl xl:text-46 text-center text-white mb-12">How can we
+                        help?</h1>
+                    <p class="text-sm sm:text-base text-white text-center">Get Insights on our solutions and other
+                        technology related information in our blogs, FAQs, feature pages or any other page in our
+                        website. If you are still unable to find what you are looking for, feel free to contact us right
+                        away</p>
+                </div>
+                <div class="lg:col-span-8 bg-white py-7 px-6 sm:px-8">
+                    <div class="flex flex-col sm:flex-row items-center justify-around space-y-6 sm:space-y-0 mb-10">
+                        <div class="flex items-center space-x-4">
+                            <input type="radio" class="black-radio-input" id="SalesEnquirey" name="userType" value="1">
+                            <label for="SalesEnquirey" class="text-base sm:text-lg md:text-xl text-dark-1">Sales
+                                Enquirey</label>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <input type="radio" class="black-radio-input" id="BecomePartner" name="userType" value="2">
+                            <label for="BecomePartner" class="text-base sm:text-lg md:text-xl text-dark-1">Become a
+                                Partner</label>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-x-7 gap-y-8 mb-16">
+                        <div>
+                            <input type="text"
+                                class="text-sm text-dark-1 placeholder:text-gray-3 py-3.5 px-5 border border-gray-2 rounded-lg w-full"
+                                placeholder="Name">
+                        </div>
+                        <div>
+                            <input type="email"
+                                class="text-sm text-dark-1 placeholder:text-gray-3 py-3.5 px-5 border border-gray-2 rounded-lg w-full"
+                                placeholder="Email">
+                        </div>
+                        <div>
+                            <input type="text"
+                                class="text-sm text-dark-1 placeholder:text-gray-3 py-3.5 px-5 border border-gray-2 rounded-lg w-full"
+                                placeholder="Phone">
+                        </div>
+                        <div>
+                            <input type="text"
+                                class="text-sm text-dark-1 placeholder:text-gray-3 py-3.5 px-5 border border-gray-2 rounded-lg w-full"
+                                placeholder="Company Name ">
+                        </div>
+                        <div>
+                            <input type="text"
+                                class="text-sm text-dark-1 placeholder:text-gray-3 py-3.5 px-5 border border-gray-2 rounded-lg w-full"
+                                placeholder="Website ">
+                        </div>
+                        <div>
+                            <input type="text"
+                                class="text-sm text-dark-1 placeholder:text-gray-3 py-3.5 px-5 border border-gray-2 rounded-lg w-full"
+                                placeholder="Monthly Pageviews">
+                        </div>
+                        <div class="relative" x-data="country()">
+                            <input type="text"
+                                class="text-sm text-dark-1 placeholder:text-gray-3 py-3.5 px-5 border border-gray-2 rounded-lg w-full"
+                                placeholder="Country" x-model="search" x-on:input="sugesstion = true">
+
+
+                            <div class="absolute top-16 z-10" x-show="sugesstion">
+                                <svg class="w-8 absolute top-0 inset-x-0 -z-10 mx-auto -translate-y-5"
+                                    viewBox="0 0 31 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_d_232_540)">
+                                        <path d="M19.5 0L30.3253 18.75H8.67468L19.5 0Z" fill="white" />
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_d_232_540" x="0.674805" y="0" width="29.6504" height="26.75"
+                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                            <feOffset dx="-4" dy="4" />
+                                            <feGaussianBlur stdDeviation="2" />
+                                            <feComposite in2="hardAlpha" operator="out" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                result="effect1_dropShadow_232_540" />
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_232_540"
+                                                result="shape" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+                                <ul
+                                    class="bg-white shadow-3 rounded-lg p-3 space-y-2 relative z-20 max-h-[300px] w-60 overflow-y-auto">
+                                    <template x-for="(items, index) in filterItems">
+                                        <li class="text-base text-gray-4" @click="search = items, sugesstion = false"
+                                            x-text="items" x-html="splitsData[index]"></li>
+                                    </template>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-span-full">
+                            <textarea name="" id="" cols="30" rows="4"
+                                class="text-base text-dark-1 placeholder:text-gray-3 py-3.5 px-5 border border-gray-2 rounded-lg w-full"
+                                placeholder="Describe your Enquiry"></textarea>
+                        </div>
+                    </div>
+
+                    <div
+                        class="max-w-[493px] mx-auto flex items-center border border-gray-2 rounded-lg py-3 pl-6 mb-11">
+                        <input type="checkbox" name="" id="robot"
+                            class="appearance-none border border-gray-2 w-8 h-8 rounded">
+                        <label for="robot" class="text-sm text-dark-1 ml-5">I’m not a Robot</label>
+                        <img src="./assets/images/recapture.png" alt="" class="ml-auto w-16">
+                    </div>
+
+                    <div class="text-center">
+                        <button class="bg-1 px-12 py-4 rounded-lg text-sm font-semibold text-white">Create
+                            Account</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact Form End -->
+        </div>
+    </section>
+    <!-- Heros Section End -->
+
+    <script>
+        function country() {
+            return {
+                sugesstion: false,
+                search: '',
+                get filterItems() {
+                    return this.countryList.filter(
+                        item => item.toLowerCase().startsWith(this.search.toLowerCase())
+                    )
+                },
+                get splitsData() {
+                    var items = [];
+                    if (this.search) {
+                        for (item in this.filterItems) {
+                            var regExp = new RegExp(this.search, 'i');
+
+                            var item = this.filterItems[item].replace(regExp, function (match) {
+                                return '<span class="text-dark-1">' + match + '</span>';
+                            })
+                            items.push(item);
+
+                        }
+                        return items
+                    } else return false;
+                },
+
+                countryList: [
+                    "Afghanistan",
+                    "Albania",
+                    "Algeria",
+                    "American Samoa",
+                    "Andorra",
+                    "Angola",
+                    "Anguilla",
+                    "Antarctica",
+                    "Antigua and Barbuda",
+                    "Argentina",
+                    "Armenia",
+                    "Aruba",
+                    "Australia",
+                    "Austria",
+                    "Azerbaijan",
+                    "Bahamas (the)",
+                    "Bahrain",
+                    "Bangladesh",
+                    "Barbados",
+                    "Belarus",
+                    "Belgium",
+                    "Belize",
+                    "Benin",
+                    "Bermuda",
+                    "Bhutan",
+                    "Bolivia (Plurinational State of)",
+                    "Bonaire, Sint Eustatius and Saba",
+                    "Bosnia and Herzegovina",
+                    "Botswana",
+                    "Bouvet Island",
+                    "Brazil",
+                    "British Indian Ocean Territory (the)",
+                    "Brunei Darussalam",
+                    "Bulgaria",
+                    "Burkina Faso",
+                    "Burundi",
+                    "Cabo Verde",
+                    "Cambodia",
+                    "Cameroon",
+                    "Canada",
+                    "Cayman Islands (the)",
+                    "Central African Republic (the)",
+                    "Chad",
+                    "Chile",
+                    "China",
+                    "Christmas Island",
+                    "Cocos (Keeling) Islands (the)",
+                    "Colombia",
+                    "Comoros (the)",
+                    "Congo (the Democratic Republic of the)",
+                    "Congo (the)",
+                    "Cook Islands (the)",
+                    "Costa Rica",
+                    "Croatia",
+                    "Cuba",
+                    "Curaçao",
+                    "Cyprus",
+                    "Czechia",
+                    "Côte d'Ivoire",
+                    "Denmark",
+                    "Djibouti",
+                    "Dominica",
+                    "Dominican Republic (the)",
+                    "Ecuador",
+                    "Egypt",
+                    "El Salvador",
+                    "Equatorial Guinea",
+                    "Eritrea",
+                    "Estonia",
+                    "Eswatini",
+                    "Ethiopia",
+                    "Falkland Islands (the) [Malvinas]",
+                    "Faroe Islands (the)",
+                    "Fiji",
+                    "Finland",
+                    "France",
+                    "French Guiana",
+                    "French Polynesia",
+                    "French Southern Territories (the)",
+                    "Gabon",
+                    "Gambia (the)",
+                    "Georgia",
+                    "Germany",
+                    "Ghana",
+                    "Gibraltar",
+                    "Greece",
+                    "Greenland",
+                    "Grenada",
+                    "Guadeloupe",
+                    "Guam",
+                    "Guatemala",
+                    "Guernsey",
+                    "Guinea",
+                    "Guinea-Bissau",
+                    "Guyana",
+                    "Haiti",
+                    "Heard Island and McDonald Islands",
+                    "Holy See (the)",
+                    "Honduras",
+                    "Hong Kong",
+                    "Hungary",
+                    "Iceland",
+                    "India",
+                    "Indonesia",
+                    "Iran (Islamic Republic of)",
+                    "Iraq",
+                    "Ireland",
+                    "Isle of Man",
+                    "Israel",
+                    "Italy",
+                    "Jamaica",
+                    "Japan",
+                    "Jersey",
+                    "Jordan",
+                    "Kazakhstan",
+                    "Kenya",
+                    "Kiribati",
+                    "Korea (the Democratic People's Republic of)",
+                    "Korea (the Republic of)",
+                    "Kuwait",
+                    "Kyrgyzstan",
+                    "Lao People's Democratic Republic (the)",
+                    "Latvia",
+                    "Lebanon",
+                    "Lesotho",
+                    "Liberia",
+                    "Libya",
+                    "Liechtenstein",
+                    "Lithuania",
+                    "Luxembourg",
+                    "Macao",
+                    "Madagascar",
+                    "Malawi",
+                    "Malaysia",
+                    "Maldives",
+                    "Mali",
+                    "Malta",
+                    "Marshall Islands (the)",
+                    "Martinique",
+                    "Mauritania",
+                    "Mauritius",
+                    "Mayotte",
+                    "Mexico",
+                    "Micronesia (Federated States of)",
+                    "Moldova (the Republic of)",
+                    "Monaco",
+                    "Mongolia",
+                    "Montenegro",
+                    "Montserrat",
+                    "Morocco",
+                    "Mozambique",
+                    "Myanmar",
+                    "Namibia",
+                    "Nauru",
+                    "Nepal",
+                    "Netherlands (the)",
+                    "New Caledonia",
+                    "New Zealand",
+                    "Nicaragua",
+                    "Niger (the)",
+                    "Nigeria",
+                    "Niue",
+                    "Norfolk Island",
+                    "Northern Mariana Islands (the)",
+                    "Norway",
+                    "Oman",
+                    "Pakistan",
+                    "Palau",
+                    "Palestine, State of",
+                    "Panama",
+                    "Papua New Guinea",
+                    "Paraguay",
+                    "Peru",
+                    "Philippines (the)",
+                    "Pitcairn",
+                    "Poland",
+                    "Portugal",
+                    "Puerto Rico",
+                    "Qatar",
+                    "Republic of North Macedonia",
+                    "Romania",
+                    "Russian Federation (the)",
+                    "Rwanda",
+                    "Réunion",
+                    "Saint Barthélemy",
+                    "Saint Helena, Ascension and Tristan da Cunha",
+                    "Saint Kitts and Nevis",
+                    "Saint Lucia",
+                    "Saint Martin (French part)",
+                    "Saint Pierre and Miquelon",
+                    "Saint Vincent and the Grenadines",
+                    "Samoa",
+                    "San Marino",
+                    "Sao Tome and Principe",
+                    "Saudi Arabia",
+                    "Senegal",
+                    "Serbia",
+                    "Seychelles",
+                    "Sierra Leone",
+                    "Singapore",
+                    "Sint Maarten (Dutch part)",
+                    "Slovakia",
+                    "Slovenia",
+                    "Solomon Islands",
+                    "Somalia",
+                    "South Africa",
+                    "South Georgia and the South Sandwich Islands",
+                    "South Sudan",
+                    "Spain",
+                    "Sri Lanka",
+                    "Sudan (the)",
+                    "Suriname",
+                    "Svalbard and Jan Mayen",
+                    "Sweden",
+                    "Switzerland",
+                    "Syrian Arab Republic",
+                    "Taiwan",
+                    "Tajikistan",
+                    "Tanzania, United Republic of",
+                    "Thailand",
+                    "Timor-Leste",
+                    "Togo",
+                    "Tokelau",
+                    "Tonga",
+                    "Trinidad and Tobago",
+                    "Tunisia",
+                    "Turkey",
+                    "Turkmenistan",
+                    "Turks and Caicos Islands (the)",
+                    "Tuvalu",
+                    "Uganda",
+                    "Ukraine",
+                    "United Arab Emirates (the)",
+                    "United Kingdom of Great Britain and Northern Ireland (the)",
+                    "United States Minor Outlying Islands (the)",
+                    "United States of America (the)",
+                    "Uruguay",
+                    "Uzbekistan",
+                    "Vanuatu",
+                    "Venezuela (Bolivarian Republic of)",
+                    "Viet Nam",
+                    "Virgin Islands (British)",
+                    "Virgin Islands (U.S.)",
+                    "Wallis and Futuna",
+                    "Western Sahara",
+                    "Yemen",
+                    "Zambia",
+                    "Zimbabwe",
+                    "Åland Islands"
+                ]
+            }
+        }
+    </script>
+</body>
+
+</html>
