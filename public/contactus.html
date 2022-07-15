@@ -91,7 +91,7 @@
                                 placeholder="Country" x-model="search" x-on:input="sugesstion = true">
 
 
-                            <div class="absolute top-16 z-10" x-show="sugesstion">
+                            <div class="absolute top-16 z-10" x-show="sugesstion && search && filterItems.length">
                                 <svg class="w-8 absolute top-0 inset-x-0 -z-10 mx-auto -translate-y-5"
                                     viewBox="0 0 31 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g filter="url(#filter0_d_232_540)">
@@ -118,8 +118,11 @@
                                 <ul
                                     class="bg-white shadow-3 rounded-lg p-3 space-y-2 relative z-20 max-h-[300px] w-60 overflow-y-auto">
                                     <template x-for="(items, index) in filterItems">
-                                        <li class="text-base text-gray-4" @click="search = items, sugesstion = false"
-                                            x-text="items" x-html="splitsData[index]"></li>
+                                        <template x-if="items && index < 5">
+                                            <li class="text-base text-gray-4"
+                                                @click="search = items, sugesstion = false" x-text="items"
+                                                x-html="splitsData[index]"></li>
+                                        </template>
                                     </template>
                                 </ul>
                             </div>
@@ -226,13 +229,15 @@
                 sugesstion: false,
                 search: '',
                 get filterItems() {
-                    return this.countryList.filter(
-                        item => item.toLowerCase().startsWith(this.search.toLowerCase())
-                    )
+                    if (this.search != '') {
+                        return this.countryList.filter(
+                            item => item.toLowerCase().startsWith(this.search.toLowerCase())
+                        )
+                    }
                 },
                 get splitsData() {
                     var items = [];
-                    if (this.search) {
+                    if (this.search != '') {
                         for (item in this.filterItems) {
                             var regExp = new RegExp(this.search, 'i');
 
@@ -243,7 +248,7 @@
 
                         }
                         return items
-                    } else return false;
+                    } else return [];
                 },
 
                 countryList: [
