@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/moloypal2021/cloudstick#readme",
   "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.0",
     "tailwindcss": "^3.1.6"
   }
 }

@@ -49,8 +49,9 @@ module.exports = {
       },
       boxShadow: {
         1: "0px 10px 25px rgba(0, 0, 0, 0.05)",
+        2: "0px 4px 40px rgba(0, 0, 0, 0.11)",
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/aspect-ratio")],
 };
