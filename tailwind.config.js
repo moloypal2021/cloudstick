@@ -17,12 +17,14 @@ module.exports = {
         },
         light: {
           1: "#FBFBFB",
+          2: "#FAFAFA",
         },
         gray: {
           1: "#EAEAEA",
           2: "#C4C4C4",
           3: "#969696",
           4: "#B1B1B1",
+          5: "#828282",
         },
       },
       fontSize: {

@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Flickity.CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!-- Tailwind.css -->
+    <link rel="stylesheet" href="./assets/css/tailwind.css">
+
+    <!-- Flickity.js -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
+</head>
+
+<body>
+    <!-- Heros Section Start -->
+    <section class="relative mb-20 sm:mb-24 md:mb-32 lg:mb-[170px] overflow-hidden">
+        <div class="bg-blue-1 absolute inset-x-0 top-0 h-[900px] lg:h-[700px] -z-10"></div>
+        <div class="container mx-auto px-6 xl:px-25 pt-20 sm:pt-24 md:pt-28 lg:pt-[136px]">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-46 text-center font-semibold text-white mb-6">Our
+                Pricing
+            </h1>
+            <p class="text-sm sm:text-base text-white text-center xl:px-16 mb-20">CloudStick offers the right
+                plans that
+                best fits your needs and has the most affordable pricing plans in the industry – by far!</p>
+
+            <div class="" x-data="carousel()" x-init="init()">
+                <div class="xl:w-[95vw] [@media_(min-width:2100px)]:w-[80vw] [@media_(min-width:1920px)]:w-[80vw] [@media_(min-width:1700px)]:w-[89vw] [@media_(min-width:1650px)]:w-[85vw] [@media_(min-width:1500px)]:w-[93vw]  -mx-10 mb-10"
+                    x-ref="carousel">
+                    <div class="px-10 w-[385px]">
+                        <div
+                            class="max-w-[305px] w-full bg-white border border-gray-1 pt-2.5 pb-8 px-6 sm:px-12 rounded-lg shadow-1">
+                            <h4 class="text-2xl font-semibold text-dark-1 text-center mb-3">Free</h4>
+                            <div class="flex items-end justify-center mb-3">
+                                <h1 class="text-42 leading-10 font-semibold text-transparent bg-clip-text bg-2 mb-1">$0
+                                </h1>
+                                <p class="text-sm leading-10 font-semibold text-transparent bg-clip-text bg-2">/month
+                                </p>
+                            </div>
+                            <ul class="space-y-4 mb-7">
+                                <li class="text-xs text-black">1 Server</li>
+                                <li class="text-xs text-black">Unlimited Hosting Accounts</li>
+                                <li class="text-xs text-black">One-click SSL</li>
+                                <li class="text-xs text-black">Server Firewall</li>
+                                <li class="text-xs text-black">Sub Domains</li>
+                                <li class="text-xs text-black">EasyPHP</li>
+                                <li class="text-xs text-black">User Quota
+                                <li class="text-xs text-black">Multiple PHP Versions</li>
+                                <li class="text-xs text-black">Git deployment</li>
+                                <li class="text-xs text-black">SFTP & Additional FTP Accounts</li>
+                            </ul>
+
+                            <div class="text-center">
+                                <a href="#" class="text-sm font-semibold text-blue-2">More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-10 w-[385px]">
+                        <div
+                            class="max-w-[332px] w-full bg-3 border border-gray-1 pt-2.5 pb-8 px-6 sm:px-14 rounded-lg shadow-1 relative overflow-hidden">
+                            <div class="relative z-10">
+                                <h4 class="text-2xl font-semibold text-white text-center mb-3">Standard</h4>
+                                <div class="flex items-end justify-center mb-3">
+                                    <h1 class="text-42 leading-10 font-semibold text-white mb-1">$6.50</h1>
+                                    <p class="text-sm leading-10 font-semibold text-white">/month</p>
+                                </div>
+                                <ul class="space-y-4 mb-7">
+                                    <li class="text-xs text-white">1 Server</li>
+                                    <li class="text-xs text-white">Unlimited Hosting Accounts</li>
+                                    <li class="text-xs text-white">One-click SSL</li>
+                                    <li class="text-xs text-white">Server Firewall</li>
+                                    <li class="text-xs text-white">Sub Domains</li>
+                                    <li class="text-xs text-white">EasyPHP</li>
+                                    <li class="text-xs text-white">User Quota
+                                    <li class="text-xs text-white">Multiple PHP Versions</li>
+                                    <li class="text-xs text-white">Git deployment</li>
+                                    <li class="text-xs text-white">SFTP & Additional FTP Accounts</li>
+                                </ul>
+
+                                <div class="text-center">
+                                    <a href="#" class="text-sm font-semibold text-white">More</a>
+                                </div>
+                            </div>
+                            <div class="absolute right-0 top-0 flex justify-center mr-4">
+                                <p class="text-xs text-white [writing-mode:vertical-rl] absolute inset-0 m-2">Most
+                                    Popular
+                                </p>
+                                <svg width="31" height="109" viewBox="0 0 31 109" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M31 0L31 109C12.9167 93.4286 18.7292 93.4286 -1.74457e-06 109L3.01997e-06 -1.35505e-06L31 0Z"
+                                        fill="#F2911F" />
+                                </svg>
+                            </div>
+                            <div class="absolute inset-0 w-1/2 ml-auto bg-white/10"></div>
+                        </div>
+                    </div>
+
+                    <div class="px-10 w-[385px]">
+                        <div
+                            class="max-w-[305px] w-full bg-white border border-gray-1 pt-2.5 pb-8 px-6 sm:px-12 rounded-lg shadow-1">
+                            <h4 class="text-2xl font-semibold text-dark-1 text-center mb-3">Pro</h4>
+                            <div class="flex items-end justify-center mb-3">
+                                <h1 class="text-42 leading-10 font-semibold text-transparent bg-clip-text bg-2 mb-1">
+                                    $12.50
+                                </h1>
+                                <p class="text-sm leading-10 font-semibold text-transparent bg-clip-text bg-2">/month
+                                </p>
+                            </div>
+                            <ul class="space-y-4 mb-7">
+                                <li class="text-xs text-black">1 Server</li>
+                                <li class="text-xs text-black">Unlimited Hosting Accounts</li>
+                                <li class="text-xs text-black">One-click SSL</li>
+                                <li class="text-xs text-black">Server Firewall</li>
+                                <li class="text-xs text-black">Sub Domains</li>
+                                <li class="text-xs text-black">EasyPHP</li>
+                                <li class="text-xs text-black">User Quota
+                                <li class="text-xs text-black">Multiple PHP Versions</li>
+                                <li class="text-xs text-black">Git deployment</li>
+                                <li class="text-xs text-black">SFTP & Additional FTP Accounts</li>
+                            </ul>
+
+                            <div class="text-center">
+                                <a href="#" class="text-sm font-semibold text-blue-2">More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-10 w-[385px]">
+                        <div
+                            class="max-w-[305px] w-full bg-white border border-gray-1 pt-2.5 pb-8 px-6 sm:px-12 rounded-lg shadow-1">
+                            <h4 class="text-2xl font-semibold text-dark-1 text-center mb-3">Pro</h4>
+                            <div class="flex items-end justify-center mb-3">
+                                <h1 class="text-42 leading-10 font-semibold text-transparent bg-clip-text bg-2 mb-1">
+                                    $12.50
+                                </h1>
+                                <p class="text-sm leading-10 font-semibold text-transparent bg-clip-text bg-2">/month
+                                </p>
+                            </div>
+                            <ul class="space-y-4 mb-7">
+                                <li class="text-xs text-black">1 Server</li>
+                                <li class="text-xs text-black">Unlimited Hosting Accounts</li>
+                                <li class="text-xs text-black">One-click SSL</li>
+                                <li class="text-xs text-black">Server Firewall</li>
+                                <li class="text-xs text-black">Sub Domains</li>
+                                <li class="text-xs text-black">EasyPHP</li>
+                                <li class="text-xs text-black">User Quota
+                                <li class="text-xs text-black">Multiple PHP Versions</li>
+                                <li class="text-xs text-black">Git deployment</li>
+                                <li class="text-xs text-black">SFTP & Additional FTP Accounts</li>
+                            </ul>
+
+                            <div class="text-center">
+                                <a href="#" class="text-sm font-semibold text-blue-2">More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-10 w-[385px]">
+                        <div
+                            class="max-w-[305px] w-full bg-white border border-gray-1 pt-2.5 pb-8 px-6 sm:px-12 rounded-lg shadow-1">
+                            <h4 class="text-2xl font-semibold text-dark-1 text-center mb-3">Pro</h4>
+                            <div class="flex items-end justify-center mb-3">
+                                <h1 class="text-42 leading-10 font-semibold text-transparent bg-clip-text bg-2 mb-1">
+                                    $12.50
+                                </h1>
+                                <p class="text-sm leading-10 font-semibold text-transparent bg-clip-text bg-2">/month
+                                </p>
+                            </div>
+                            <ul class="space-y-4 mb-7">
+                                <li class="text-xs text-black">1 Server</li>
+                                <li class="text-xs text-black">Unlimited Hosting Accounts</li>
+                                <li class="text-xs text-black">One-click SSL</li>
+                                <li class="text-xs text-black">Server Firewall</li>
+                                <li class="text-xs text-black">Sub Domains</li>
+                                <li class="text-xs text-black">EasyPHP</li>
+                                <li class="text-xs text-black">User Quota
+                                <li class="text-xs text-black">Multiple PHP Versions</li>
+                                <li class="text-xs text-black">Git deployment</li>
+                                <li class="text-xs text-black">SFTP & Additional FTP Accounts</li>
+                            </ul>
+
+                            <div class="text-center">
+                                <a href="#" class="text-sm font-semibold text-blue-2">More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- Heros Section End -->
+
+
+    <!-- CTA Section Start -->
+    <section class="bg-blue-1 mb-20 sm:mb-24 md:mb-32 lg:mb-[170px]">
+        <div
+            class="container mx-auto px-6 xl:px-25 pt-11 pb-8 flex flex-col lg:flex-row items-center lg:justify-between space-y-8 lg:space-y-0 lg:space-x-4">
+            <div class="lg:w-8/12 text-center lg:text-start">
+                <h4 class="text-xl md:text-2xl font-semibold text-white mb-3.5">Migrate to cloud stick</h4>
+                <p class="text-sm text-white">Don’t worry! You won’t lose your money or valuable data during your
+                    migration to CloudStick. After receiving your request for migration, our support team will contact
+                    you within 20 minutes and assist you with migrating your website or application for free!</p>
+            </div>
+
+            <div class="text-center lg:text-end lg:mt-6">
+                <a href="#" class="bg-1 px-14 py-4 text-sm font-semibold text-white rounded-lg inline-block">Start free
+                    Trial </a>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section End -->
+
+
+    <!-- Pricing Feature Section Start -->
+    <section class="container mx-auto px-6 xl:px-25 mb-24 sm:mb-28 md:mb-40 lg:mb-[188px]">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-46 text-center text-dark-1 mb-12">Innovation and simplicity
+        </h1>
+        <p class="text-sm sm:text-base text-dark-1 text-center max-w-[976px] mx-auto mb-12">If you are looking for a
+            feature
+            rich hosting solution with affordable and flexible pricing, minimum management hassle and ultra-convenience
+            you have come to the right place.</p>
+
+        <div class="bg-white border border-gray-1 rounded-lg pt-3 sm:pt-6 pb-5 sm:pb-8 overflow-auto">
+            <table class="table-auto w-full">
+                <thead>
+                    <tr>
+                        <th class="text-lg md:text-xl font-semibold text-dark-1 text-left pb-12 px-3 sm:px-6">Features
+                        </th>
+                        <th class="text-lg md:text-xl font-semibold text-dark-1 text-center pb-12 px-3 sm:px-6">Free
+                        </th>
+                        <th class="text-lg md:text-xl font-semibold text-dark-1 text-center pb-12 px-3 sm:px-6">Basic
+                        </th>
+                        <th class="text-lg md:text-xl font-semibold text-dark-1 text-center pb-12 px-3 sm:px-6">Pro
+                        </th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-left py-1.5 px-3 sm:px-6">
+                            Total Connected servers</td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            1</td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            1</td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            Unlimited</td>
+                    </tr>
+                    <tr>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-left py-4 px-3 sm:px-6">Total
+                            number
+                            od webhosting Accounts</td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            Low</td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            High</td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            High</td>
+                    </tr>
+                    <tr>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-left py-1.5 px-3 sm:px-6">
+                            Total Connected servers</td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            Minimal</td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/cross-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-left py-4 px-3 sm:px-6">Support
+                            Priority</td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/cross-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-left py-1.5 px-3 sm:px-6">
+                            Advanced database management</td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-left py-4 px-3 sm:px-6">Manual SSL
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            Minimal
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-left py-1.5 px-3 sm:px-6">
+                            Advanced File Manager</td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-left py-4 px-3 sm:px-6">Team
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-left py-1.5 px-3 sm:px-6">
+                            One click free SSL</td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-left py-4 px-3 sm:px-6">User/web
+                            hosting account Quota
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-left py-1.5 px-3 sm:px-6">
+                            Multiple PHP versions</td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-left py-4 px-3 sm:px-6">SFTP and
+                            additional FTP accounts for webhosting accounts
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            Only SFTP
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-left py-1.5 px-3 sm:px-6">
+                            Subdomains</td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/cross-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-left py-4 px-3 sm:px-6">Easy
+                            PHP-install PHP extensions with one , click no need of command line
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/cross-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-left py-1.5 px-3 sm:px-6">
+                            Git Deployment</td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/cross-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-left py-4 px-3 sm:px-6">PHP
+                            CLI-allow to change command line PHP version
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-left py-1.5 px-3 sm:px-6">
+                            Server firewall</td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-left py-4 px-3 sm:px-6">Activity
+                            log
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            Limited
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-left py-1.5 px-3 sm:px-6">
+                            Cron job management</td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/cross-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-left py-4 px-3 sm:px-6">Time zone
+                            management-Allow customers to change server time
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/cross-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-left py-1.5 px-3 sm:px-6">
+                            Tweak SSH settings</td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/cross-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-left py-4 px-3 sm:px-6">Reset MSQL
+                            root password
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/cross-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-left py-1.5 px-3 sm:px-6">
+                            Third party and security update management</td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-left py-4 px-3 sm:px-6">Total
+                            Connected servers
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/cross-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-left py-1.5 px-3 sm:px-6">
+                            Service management</td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/cross-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-left py-4 px-3 sm:px-6">Supervise
+                            management
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/cross-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-left py-1.5 px-3 sm:px-6">
+                            Server transfer</td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/cross-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-left py-4 px-3 sm:px-6">Change
+                            server IP address
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/cross-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-left py-1.5 px-3 sm:px-6">
+                            SSH key management</td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/cross-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-left py-4 px-3 sm:px-6">
+                            Development keys
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/cross-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-left py-1.5 px-3 sm:px-6">
+                            One click open source project installations</td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/cross-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 bg-light-2 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/check-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-left py-4 px-3 sm:px-6">Server
+                            health status
+                        </td>
+                        <td class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6">
+                            <img src="./assets/images/cross-icon-circle.svg" alt=""
+                                class="w-4 sm:w-5 md:w-6 min-w-[16px] mx-auto">
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6 whitespace-nowrap">
+                            24 x 7 <br>
+                            30 Days
+                        </td>
+                        <td
+                            class="text-xs sm:text-sm md:text-base text-dark-1 text-center py-1.5 px-3 sm:px-6 whitespace-nowrap">
+                            24 x 7 <br>
+                            30 Days
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <!-- Pricing Feature Section End -->
+
+    <!-- CTA 2 Section Start -->
+    <section class="bg-blue-1 mb-20 sm:mb-24 md:mb-32 lg:mb-[170px]">
+        <div
+            class="container mx-auto px-6 xl:px-25 pt-11 pb-8 flex flex-col lg:flex-row items-center lg:justify-between space-y-8 lg:space-y-0 lg:space-x-4">
+            <div class="lg:w-8/12 text-center lg:text-start">
+                <h4 class="text-xl md:text-2xl font-semibold text-white mb-3.5">Create a custom Plan</h4>
+                <p class="text-sm text-white">Don’t worry! You won’t lose your money or valuable data during your
+                    migration to CloudStick. After receiving your request for migration, our support team will contact
+                    you within 20 minutes and assist you with migrating your website or application for free!</p>
+            </div>
+
+            <div class="text-center lg:text-end lg:mt-6">
+                <a href="#" class="bg-1 px-20 py-4 text-sm font-semibold text-white rounded-lg inline-block">Create </a>
+            </div>
+        </div>
+    </section>
+    <!-- CTA 2 Section End -->
+
+
+    <!-- FAQ Section Start -->
+    <section class="container mx-auto px-6 xl:px-32 mb-16 sm:mb-20 md:mb-28 lg:mb-[136px]">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-46 text-center text-dark-1 mb-12">Pricing & Billing FAQs
+        </h1>
+
+        <div class="bg-light-2 px-5 sm:px-8 md:px-10 pt-8 pb-4 mb-4" x-data="{open: false}">
+            <div class="flex items-center justify-between mb-4 cursor-pointer" @click="open = !open">
+                <h5 class="text-base sm:text-lg md:text-xl font-semibold text-dark-1">What is a free trail ?</h5>
+                <svg class="min-w-[18px] transition-all duration-100" :class="open ? 'rotate-180' : ''" width="22"
+                    height="13" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.4525 2.00022L10.4254 11L1.76172 2" stroke="#313133" stroke-width="3.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div x-show="open">
+                <p class="text-sm sm:text-base text-gray-5">We want to make sure you are completely satisfied with
+                    CloudStick before you buy the product.We believe this gives you the opportunity to experience
+                    CloudStick
+                    and to explore the depth and breadth extensively. You don’t have to add your payment details and you
+                    can
+                    cancel anytime.</p>
+            </div>
+        </div>
+
+        <div class="bg-light-2 px-5 sm:px-8 md:px-10 pt-8 pb-4 mb-4" x-data="{open: false}">
+            <div class="flex items-center justify-between mb-4 cursor-pointer" @click="open = !open">
+                <h5 class="text-base sm:text-lg md:text-xl font-semibold text-dark-1">What is payment methods does
+                    CloudStick accept ?</h5>
+                <svg class="min-w-[18px] transition-all duration-100" :class="open ? 'rotate-180' : ''" width="22"
+                    height="13" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.4525 2.00022L10.4254 11L1.76172 2" stroke="#313133" stroke-width="3.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div x-show="open">
+                <p class="text-sm sm:text-base text-gray-5">We support Paypal and card payments. All major credit cards
+                    including, Visa, Mastercard, Discover, American Express and UnionPay</p>
+            </div>
+        </div>
+
+        <div class="bg-light-2 px-5 sm:px-8 md:px-10 pt-8 pb-4 mb-4" x-data="{open: false}">
+            <div class="flex items-center justify-between mb-4 cursor-pointer" @click="open = !open">
+                <h5 class="text-base sm:text-lg md:text-xl font-semibold text-dark-1">What currency is this in ?</h5>
+                <svg class="min-w-[18px] transition-all duration-100" :class="open ? 'rotate-180' : ''" width="22"
+                    height="13" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.4525 2.00022L10.4254 11L1.76172 2" stroke="#313133" stroke-width="3.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div x-show="open">
+                <p class="text-sm sm:text-base text-gray-5">We do business in US Dollars ?</p>
+            </div>
+        </div>
+
+        <div class="bg-light-2 px-5 sm:px-8 md:px-10 pt-8 pb-4 mb-4" x-data="{open: false}">
+            <div class="flex items-center justify-between mb-4 cursor-pointer" @click="open = !open">
+                <h5 class="text-base sm:text-lg md:text-xl font-semibold text-dark-1">What happens to my server after I
+                    cancel a subscription ?</h5>
+                <svg class="min-w-[18px] transition-all duration-100" :class="open ? 'rotate-180' : ''" width="22"
+                    height="13" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.4525 2.00022L10.4254 11L1.76172 2" stroke="#313133" stroke-width="3.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div x-show="open">
+                <p class="text-sm sm:text-base text-gray-5">After cancelling your subscription, all data remains on your
+                    servers: we do not remove any data. When you renew your account with CloudStick, you are able to
+                    manage all of your servers again if you didn’t reinstall them</p>
+            </div>
+        </div>
+        <div class="bg-light-2 px-5 sm:px-8 md:px-10 pt-8 pb-4 mb-4" x-data="{open: false}">
+            <div class="flex items-center justify-between mb-4 cursor-pointer" @click="open = !open">
+                <h5 class="text-base sm:text-lg md:text-xl font-semibold text-dark-1">Will I get Team Features along
+                    with all plans ?</h5>
+                <svg class="min-w-[18px] transition-all duration-100" :class="open ? 'rotate-180' : ''" width="22"
+                    height="13" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.4525 2.00022L10.4254 11L1.76172 2" stroke="#313133" stroke-width="3.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div x-show="open">
+                <p class="text-sm sm:text-base text-gray-5">Team features are included in the Basic and Pro Plans</p>
+            </div>
+        </div>
+        <div class="bg-light-2 px-5 sm:px-8 md:px-10 pt-8 pb-4 mb-4" x-data="{open: false}">
+            <div class="flex items-center justify-between mb-4 cursor-pointer" @click="open = !open">
+                <h5 class="text-base sm:text-lg md:text-xl font-semibold text-dark-1">Will I be Charged for monthly
+                    subscriptions once I add my Card or Paypal Details?</h5>
+                <svg class="min-w-[18px] transition-all duration-100" :class="open ? 'rotate-180' : ''" width="22"
+                    height="13" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.4525 2.00022L10.4254 11L1.76172 2" stroke="#313133" stroke-width="3.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div x-show="open">
+                <p class="text-sm sm:text-base text-gray-5">Yes, we will begin charging you monthly/yearly based on the
+                    subscription type you have chosen</p>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ Section End -->
+
+
+    <!-- Newsletter Section Start -->
+    <section class="container mx-auto px-6 2xl:px-0 xl:max-w-screen-lg mb-[104px]">
+        <div class="bg-blue-1 w-full pt-11 pb-9 px-6 sm:px-16">
+            <div class="max-w-3xl mx-auto">
+                <h4 class="text-2xl font-semibold text-white mb-5 text-center lg:text-start">Subscribe to our News
+                    Letter for more content.</h4>
+                <div class="flex flex-col lg:flex-row items-center lg:space-x-2 space-y-2 lg:space-y-0">
+                    <input type="text"
+                        class="w-full border border-white bg-transparent py-3.5 px-6 rounded-lg text-sm text-white placeholder:text-white"
+                        placeholder="Email ID">
+
+                    <button
+                        class="text-sm font-semibold text-white px-12 xl:px-[70px] py-3.5 bg-1 rounded-lg">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Newsletter Section End -->
+
+    <script>
+        function carousel() {
+            return {
+                active: 0,
+                init() {
+                    var flkty = new Flickity(this.$refs.carousel, {
+                        wrapAround: false,
+                        autoPlay: false,
+                        prevNextButtons: false,
+                        pageDots: false,
+                        draggable: true,
+                        contain: true,
+                        cellAlign: 'left',
+
+                    });
+                    flkty.on('change', i => {
+                        this.active = i;
+                        if (i === flkty.cells.length) {
+                            flkty.contain = false;
+                        }
+                    });
+
+                },
+                prev() {
+                    var flkty = new Flickity(this.$refs.carousel);
+                    flkty.previous();
+                },
+                next() {
+                    var flkty = new Flickity(this.$refs.carousel);
+                    flkty.next();
+                }
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>
