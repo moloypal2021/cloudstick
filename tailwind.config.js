@@ -61,6 +61,7 @@ module.exports = {
         1: "0px 10px 25px rgba(0, 0, 0, 0.05)",
         2: "0px 4px 40px rgba(0, 0, 0, 0.11)",
         3: "-4px 4px 4px rgba(0, 0, 0, 0.08)",
+        4: "0px 4px 42px rgba(0, 0, 0, 0.06)",
       },
     },
   },
