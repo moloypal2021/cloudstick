@@ -27,21 +27,33 @@
             <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-46 text-center font-semibold text-white mb-6">Our
                 Pricing
             </h1>
-            <p class="text-sm sm:text-base text-white text-center xl:px-16 mb-20">CloudStick offers the right
+            <p class="text-sm sm:text-base text-white text-center xl:px-16 mb-12">CloudStick offers the right
                 plans that
                 best fits your needs and has the most affordable pricing plans in the industry – by far!</p>
 
+            <div
+                class="flex flex-col md:flex-row items-center justify-center space-y-5 md:space-y-0 md:space-x-10 mb-16">
+                <div class="flex items-center space-x-3">
+                    <input type="radio" class="white-radio-input">
+                    <h4 class="text-lg sm:text-xl md:text-2xl font-semibold text-white">Anually ( 2 months free )</h4>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <input type="radio" class="white-radio-input">
+                    <h4 class="text-lg sm:text-xl md:text-2xl font-semibold text-white">Monthly</h4>
+                </div>
+            </div>
+
             <div class="" x-data="carousel()" x-init="init()">
-                <div class="xl:w-[95vw] [@media_(min-width:2100px)]:w-[80vw] [@media_(min-width:1920px)]:w-[80vw] [@media_(min-width:1700px)]:w-[89vw] [@media_(min-width:1650px)]:w-[85vw] [@media_(min-width:1500px)]:w-[93vw]  -mx-10 mb-10"
+                <div class="xl:w-[95vw] [@media_(min-width:2110px)]:w-[80vw] [@media_(min-width:1920px)]:w-[80vw] [@media_(min-width:1800px)]:w-[85vw] [@media_(min-width:1710px)]:w-[85vw] [@media_(min-width:1650px)]:w-[85vw] [@media_(min-width:1500px)]:w-[93vw]  -mx-10 mb-10"
                     x-ref="carousel">
                     <div class="px-10 w-[385px]">
                         <div
                             class="max-w-[305px] w-full bg-white border border-gray-1 pt-2.5 pb-8 px-6 sm:px-12 rounded-lg shadow-1">
                             <h4 class="text-2xl font-semibold text-dark-1 text-center mb-3">Free</h4>
                             <div class="flex items-end justify-center mb-3">
-                                <h1 class="text-42 leading-10 font-semibold text-transparent bg-clip-text bg-2 mb-1">$0
+                                <h1 class="text-42 leading-10 font-semibold text-transparent bg-clip-text bg-6 mb-1">$0
                                 </h1>
-                                <p class="text-sm leading-10 font-semibold text-transparent bg-clip-text bg-2">/month
+                                <p class="text-sm leading-10 font-semibold text-transparent bg-clip-text bg-6">/month
                                 </p>
                             </div>
                             <ul class="space-y-4 mb-7">
@@ -65,7 +77,7 @@
 
                     <div class="px-10 w-[385px]">
                         <div
-                            class="max-w-[332px] w-full bg-3 border border-gray-1 pt-2.5 pb-8 px-6 sm:px-14 rounded-lg shadow-1 relative overflow-hidden">
+                            class="max-w-[332px] w-full bg-3 pt-2.5 pb-8 px-6 sm:px-14 rounded-lg shadow-1 relative overflow-hidden">
                             <div class="relative z-10">
                                 <h4 class="text-2xl font-semibold text-white text-center mb-3">Standard</h4>
                                 <div class="flex items-end justify-center mb-3">
@@ -109,39 +121,10 @@
                             class="max-w-[305px] w-full bg-white border border-gray-1 pt-2.5 pb-8 px-6 sm:px-12 rounded-lg shadow-1">
                             <h4 class="text-2xl font-semibold text-dark-1 text-center mb-3">Pro</h4>
                             <div class="flex items-end justify-center mb-3">
-                                <h1 class="text-42 leading-10 font-semibold text-transparent bg-clip-text bg-2 mb-1">
+                                <h1 class="text-42 leading-10 font-semibold text-transparent bg-clip-text bg-6 mb-1">
                                     $12.50
                                 </h1>
-                                <p class="text-sm leading-10 font-semibold text-transparent bg-clip-text bg-2">/month
-                                </p>
-                            </div>
-                            <ul class="space-y-4 mb-7">
-                                <li class="text-xs text-black">1 Server</li>
-                                <li class="text-xs text-black">Unlimited Hosting Accounts</li>
-                                <li class="text-xs text-black">One-click SSL</li>
-                                <li class="text-xs text-black">Server Firewall</li>
-                                <li class="text-xs text-black">Sub Domains</li>
-                                <li class="text-xs text-black">EasyPHP</li>
-                                <li class="text-xs text-black">User Quota
-                                <li class="text-xs text-black">Multiple PHP Versions</li>
-                                <li class="text-xs text-black">Git deployment</li>
-                                <li class="text-xs text-black">SFTP & Additional FTP Accounts</li>
-                            </ul>
-
-                            <div class="text-center">
-                                <a href="#" class="text-sm font-semibold text-blue-2">More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="px-10 w-[385px]">
-                        <div
-                            class="max-w-[305px] w-full bg-white border border-gray-1 pt-2.5 pb-8 px-6 sm:px-12 rounded-lg shadow-1">
-                            <h4 class="text-2xl font-semibold text-dark-1 text-center mb-3">Pro</h4>
-                            <div class="flex items-end justify-center mb-3">
-                                <h1 class="text-42 leading-10 font-semibold text-transparent bg-clip-text bg-2 mb-1">
-                                    $12.50
-                                </h1>
-                                <p class="text-sm leading-10 font-semibold text-transparent bg-clip-text bg-2">/month
+                                <p class="text-sm leading-10 font-semibold text-transparent bg-clip-text bg-6">/month
                                 </p>
                             </div>
                             <ul class="space-y-4 mb-7">
@@ -168,10 +151,40 @@
                             class="max-w-[305px] w-full bg-white border border-gray-1 pt-2.5 pb-8 px-6 sm:px-12 rounded-lg shadow-1">
                             <h4 class="text-2xl font-semibold text-dark-1 text-center mb-3">Pro</h4>
                             <div class="flex items-end justify-center mb-3">
-                                <h1 class="text-42 leading-10 font-semibold text-transparent bg-clip-text bg-2 mb-1">
+                                <h1 class="text-42 leading-10 font-semibold text-transparent bg-clip-text bg-6 mb-1">
                                     $12.50
                                 </h1>
-                                <p class="text-sm leading-10 font-semibold text-transparent bg-clip-text bg-2">/month
+                                <p class="text-sm leading-10 font-semibold text-transparent bg-clip-text bg-6">/month
+                                </p>
+                            </div>
+                            <ul class="space-y-4 mb-7">
+                                <li class="text-xs text-black">1 Server</li>
+                                <li class="text-xs text-black">Unlimited Hosting Accounts</li>
+                                <li class="text-xs text-black">One-click SSL</li>
+                                <li class="text-xs text-black">Server Firewall</li>
+                                <li class="text-xs text-black">Sub Domains</li>
+                                <li class="text-xs text-black">EasyPHP</li>
+                                <li class="text-xs text-black">User Quota
+                                <li class="text-xs text-black">Multiple PHP Versions</li>
+                                <li class="text-xs text-black">Git deployment</li>
+                                <li class="text-xs text-black">SFTP & Additional FTP Accounts</li>
+                            </ul>
+
+                            <div class="text-center">
+                                <a href="#" class="text-sm font-semibold text-blue-2">More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-10 w-[385px]">
+                        <div
+                            class="max-w-[305px] w-full bg-white border border-gray-1 pt-2.5 pb-8 px-6 sm:px-12 rounded-lg shadow-1">
+                            <h4 class="text-2xl font-semibold text-dark-1 text-center mb-3">Pro</h4>
+                            <div class="flex items-end justify-center mb-3">
+                                <h1 class="text-42 leading-10 font-semibold text-transparent bg-clip-text bg-6 mb-1">
+                                    $12.50
+                                </h1>
+                                <p class="text-sm leading-10 font-semibold text-transparent bg-clip-text bg-6">/month
                                 </p>
                             </div>
                             <ul class="space-y-4 mb-7">
