@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Flickity.CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!-- Tailwind.css -->
+    <link rel="stylesheet" href="./assets/css/tailwind.css">
+
+    <!-- Flickity.js -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
+</head>
+
+<body>
+    <!-- Heros Section Start -->
+    <section class="bg-blue-1 mb-20 sm:mb-24 md:mb-32 lg:mb-[172px] overflow-hidden">
+        <div class="container  mx-auto px-6 xl:px-25 pb-10 lg:pb-14 pt-16">
+            <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-12 lg:space-y-0">
+
+                <div class="text-center lg:text-left lg:w-1/2 2xl:w-5/12 2xl:min-w-[657px] 2xl:mt-12">
+                    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-46 font-bold text-white mb-9">
+                        Build, Deploy and Manage
+                        <span class="text-green-1">Web Applications</span>
+                    </h1>
+                    <p class="text-sm text-white lg:max-w-lg lg:pr-5 mb-16">Managing your Web Applications have
+                        never been easier. CloudStick offers an unrivalled array of rich features to manage a range
+                        of Web Applications. Some of the exciting features include One Click Installers, multiple
+                        isolated PHP versions, free SSL, unlimited subdomains, intuitive file manager, automatic Git
+                        Deployment and more.</p>
+
+                    <a href="#"
+                        class="bg-1 px-[60px] py-3.5 rounded-lg text-sm text-white font-semibold inline-block">Migrate
+                        now</a>
+                </div>
+                <div class="lg:w-1/2 2xl:w-7/12">
+                    <img src="./assets/images/application-heros-img.svg" alt=""
+                        class="w-full max-w-2xl lg:max-w-3xl  2xl:min-w-[598px] mx-auto  2xl:-translate-x-10">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Heros Section End -->
+
+    <!-- Content Section Start -->
+    <section class="container mx-auto px-6 xl:px-25">
+        <div
+            class="flex flex-col-reverse lg:flex-row items-center lg:justify-between space-y-12 lg:space-y-0 space-y-reverse mb-20 sm:mb-24 md:mb-32 lg:mb-[199px]">
+            <div class="lg:max-w-xl lg:pr-5">
+                <h4 class="text-xl md:text-2xl font-semibold text-dark-1 mb-10">
+                    Assign User Quotas and manage Web Hosting
+                    Accounts Easily</h4>
+                <p class="text-base sm:text-lg md:text-xl text-dark-1">Users can manage and limit the resources for each
+                    system user easily with an ultra-handy system of assigning user quota for web application users.
+                    Customers can resell cloud hosting services to the clients or users of their preference.</p>
+            </div>
+            <div class="lg:ml-12">
+                <img src="./assets/images/application-img-1.svg" alt="" class="w-[458px]">
+            </div>
+        </div>
+
+        <div
+            class="flex flex-col-reverse lg:flex-row items-center lg:justify-between space-y-12 lg:space-y-0 space-y-reverse mb-20 sm:mb-24 md:mb-32 lg:mb-[200px]">
+            <div class="lg:max-w-xl lg:pr-5 lg:order-2">
+                <h4 class="text-xl md:text-2xl font-semibold text-dark-1 mb-10">Gain enhanced control in PHP
+                    configurations</h4>
+                <p class="text-base sm:text-lg md:text-xl text-dark-1">CloudStick offers multiple PHP versions for users
+                    such as php 5.5, 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, 8.0 and more as and when the newer versions are
+                    launched. We have kept the web applications isolated and separate to enable users greater control in
+                    the PHP configurations. These versions are pre-loaded on all servers as per the server operating
+                    system versions</p>
+            </div>
+            <div class="lg:order-1 lg:mr-12">
+                <img src="./assets/images/application-img-2.svg" alt="" class="w-[406px]">
+            </div>
+        </div>
+
+        <div
+            class="flex flex-col-reverse lg:flex-row items-center lg:justify-between space-y-12 lg:space-y-0 space-y-reverse mb-20 sm:mb-24 md:mb-28 lg:mb-[134px]">
+            <div class="lg:max-w-xl lg:pr-5">
+                <h4 class="text-xl md:text-2xl font-semibold text-dark-1 mb-10">SSL for Free – Install in less than a
+                    minute</h4>
+                <p class="text-base sm:text-lg md:text-xl text-dark-1">Free SSL certificates are issued to paid
+                    customers in less than a minute, with just a few clicks.</p>
+            </div>
+            <div class="lg:ml-12">
+                <img src="./assets/images/application-img-3.svg" alt="" class="w-[408px]">
+            </div>
+        </div>
+
+        <div
+            class="flex flex-col-reverse lg:flex-row items-center lg:justify-between space-y-12 lg:space-y-0 space-y-reverse mb-24 sm:mb-32 md:mb-40 lg:mb-[226px]">
+            <div class="lg:max-w-[583px] lg:order-2">
+                <h4 class="text-xl md:text-2xl font-semibold text-dark-1 mb-10">Create multiple Subdomains in one go
+                </h4>
+                <p class="text-base sm:text-lg md:text-xl text-dark-1">Users can create unlimited number of subdomains
+                    under each account/web application. They can also choose different PHP versions for these subdomains
+                    and install SSL certificates as well.
+
+                </p>
+            </div>
+            <div class="lg:order-1 lg:mr-12">
+                <img src="./assets/images/application-img-4.svg" alt="" class="w-[400px]">
+            </div>
+        </div>
+
+
+        <div
+            class="flex flex-col-reverse lg:flex-row items-center lg:justify-between space-y-12 lg:space-y-0 space-y-reverse mb-24 sm:mb-32 md:mb-44 lg:mb-[238px]">
+            <div class="lg:max-w-xl lg:pr-5">
+                <h4 class="text-xl md:text-2xl font-semibold text-dark-1 mb-10">SIntuitive file manager making life easy
+                    for you</h4>
+                <p class="text-base sm:text-lg md:text-xl text-dark-1">Users can add/edit or maintain their codes easily
+                    using our intuitive file manager. This will save a lot of time and you can avoid going through the
+                    trouble of finding the FTP or SFTP credentials and this will give you access to the code from any
+                    device – a definite lifesaver!</p>
+            </div>
+            <div class="lg:ml-12">
+                <img src="./assets/images/application-img-5.svg" alt="" class="w-[468px]">
+            </div>
+        </div>
+
+        <div
+            class="flex flex-col-reverse lg:flex-row items-center lg:justify-between space-y-12 lg:space-y-0 space-y-reverse mb-28 sm:mb-40 md:mb-48 lg:mb-[288px]">
+            <div class="lg:max-w-[583px] lg:order-2">
+                <h4 class="text-xl md:text-2xl font-semibold text-dark-1 mb-10">Easier Cache Control and Management
+                </h4>
+                <p class="text-base sm:text-lg md:text-xl text-dark-1">Enjoy much needed relief from the headache of
+                    Cache Management, as it is now made more user-friendly than ever. Users need not create any custom
+                    rules. They can go to web applications and click on cache control manager and customize as per their
+                    needs in just a few clicks.</p>
+            </div>
+            <div class="lg:order-1 lg:mr-12">
+                <img src="./assets/images/application-img-6.svg" alt="" class="w-[455px]">
+            </div>
+        </div>
+
+        <div
+            class="flex flex-col-reverse lg:flex-row items-center lg:justify-between space-y-12 lg:space-y-0 space-y-reverse mb-24 sm:mb-32 md:mb-40 lg:mb-[205px]">
+            <div class="lg:max-w-xl lg:pr-5">
+                <h4 class="text-xl md:text-2xl font-semibold text-dark-1 mb-10">
+                    Powerful One click App installer</h4>
+                <p class="text-base sm:text-lg md:text-xl text-dark-1">CloudStick’s One Click Application and Software
+                    installers empowers users to create web applications with a single click. Choose from an array of
+                    popular applications to deploy such as WordPress, Joomla, phpMyAdmin, Nextcloud, among others.</p>
+            </div>
+            <div class="lg:ml-12">
+                <img src="./assets/images/application-img-7.svg" alt="" class="w-[443px]">
+            </div>
+        </div>
+
+        <div
+            class="flex flex-col-reverse lg:flex-row items-center lg:justify-between space-y-12 lg:space-y-0 space-y-reverse mb-20 sm:mb-28 md:mb-32 lg:mb-[165px]">
+            <div class="lg:max-w-[583px] lg:order-2">
+                <h4 class="text-xl md:text-2xl font-semibold text-dark-1 mb-10">Log management made easy
+                </h4>
+                <p class="text-base sm:text-lg md:text-xl text-dark-1">Monitoring and analysing logs can be cumbersome
+                    as developers have to find configuration files in the backend to check for the logs. CloudStick’s
+                    log management feature allows users to easily navigate and read the logs of your web applications
+                    through a user-friendly interface. Users can avoid the trouble of searching the files backend for
+                    checking logs.</p>
+            </div>
+            <div class="lg:order-1 lg:mr-12">
+                <img src="./assets/images/application-img-8.svg" alt="" class="w-[340px]">
+            </div>
+        </div>
+
+
+        <div
+            class="flex flex-col-reverse lg:flex-row items-center lg:justify-between space-y-12 lg:space-y-0 space-y-reverse mb-24 sm:mb-32 md:mb-44 lg:mb-[224px]">
+            <div class="lg:max-w-xl lg:pr-5">
+                <h4 class="text-xl md:text-2xl font-semibold text-dark-1 mb-10">
+                    Traffic Analyser – Gain meaningful insights</h4>
+                <p class="text-base sm:text-lg md:text-xl text-dark-1">CloudStick offers a powerful traffic analyser and
+                    dashboards for users to easily identify and dive into meaningful insights such as from where the
+                    traffic is coming from, what browsers and devices your website is accessed from, how much data is
+                    being utilized by each and every web application, and more. Make data-driven decisions to grow your
+                    traffic</p>
+            </div>
+            <div class="lg:ml-12">
+                <img src="./assets/images/application-img-9.svg" alt="" class="w-[508px]">
+            </div>
+        </div>
+
+        <div
+            class="flex flex-col-reverse lg:flex-row items-center lg:justify-between space-y-12 lg:space-y-0 space-y-reverse mb-28 sm:mb-32 md:mb-44 lg:mb-[221px]">
+            <div class="lg:max-w-[583px] lg:order-2">
+                <h4 class="text-xl md:text-2xl font-semibold text-dark-1 mb-10">Git Deployments now Faster, Easier
+                    and Automatic
+                </h4>
+                <p class="text-base sm:text-lg md:text-xl text-dark-1">This handy feature allows users to setup their
+                    Git Repository and the desired branch into the web application, saving lot of time to sync the
+                    updated files to the server. Once the Git repository is added/integrated to the web application, it
+                    will automatically push each and every change to the web application automatically.</p>
+            </div>
+            <div class="lg:order-1 lg:mr-12">
+                <img src="./assets/images/application-img-10.svg" alt="" class="w-[432px]">
+            </div>
+        </div>
+
+        <div
+            class="flex flex-col-reverse lg:flex-row items-center lg:justify-between space-y-12 lg:space-y-0 space-y-reverse mb-24 sm:mb-32 md:mb-44 lg:mb-[260px]">
+            <div class="lg:max-w-xl lg:pr-5">
+                <h4 class="text-xl md:text-2xl font-semibold text-dark-1 mb-10">Managing PHP extensions now effortless
+                </h4>
+                <p class="text-base sm:text-lg md:text-xl text-dark-1">CloudStick allows users to install/ uninstall PHP
+                    extensions easily with just a single click. Users do not have to go through the trouble of
+                    researching and studying the PHP configurations to have them installed. There is no down time during
+                    the installation at all, it just takes one click.</p>
+            </div>
+            <div class="lg:ml-12">
+                <img src="./assets/images/application-img-11.svg" alt="" class="w-[427px]">
+            </div>
+        </div>
+
+        <div
+            class="flex flex-col-reverse lg:flex-row items-center lg:justify-between space-y-12 lg:space-y-0 space-y-reverse mb-16 sm:mb-20 md:mb-28 lg:mb-[146px]">
+            <div class="lg:max-w-[583px] lg:order-2">
+                <h4 class="text-xl md:text-2xl font-semibold text-dark-1 mb-10">Easy Node application Deployment
+                </h4>
+                <p class="text-base sm:text-lg md:text-xl text-dark-1">CloudStick allows users to deploy web application
+                    for their node applications within a minute. They need not spend their valuable time looking for any
+                    custom configuration and research more. Just enter the node application port, and you are good to
+                    go!
+                </p>
+            </div>
+            <div class="lg:order-1 lg:mr-12">
+                <img src="./assets/images/application-img-12.svg" alt="" class="w-[400px]">
+            </div>
+        </div>
+
+        <div
+            class="flex flex-col-reverse lg:flex-row items-center lg:justify-between space-y-12 lg:space-y-0 space-y-reverse mb-24 sm:mb-32 md:mb-44 lg:mb-[224px]">
+            <div class="lg:max-w-xl lg:pr-5">
+                <h4 class="text-xl md:text-2xl font-semibold text-dark-1 mb-10">Manage Web Application Activation Status
+                </h4>
+                <p class="text-base sm:text-lg md:text-xl text-dark-1">CloudStick offers a useful feature to allow users
+                    to easily disable, enable, suspend or un-suspend Web Applications, whenever they want. This allows
+                    greater control on the website activations as per their need.</p>
+            </div>
+            <div class="lg:ml-12">
+                <img src="./assets/images/application-img-13.svg" alt="" class="w-[445px]">
+            </div>
+        </div>
+
+
+    </section>
+    <!-- Content Section End -->
+
+
+</body>
+
+</html>
