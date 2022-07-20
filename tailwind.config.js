@@ -11,6 +11,7 @@ module.exports = {
           1: "#00173E",
           2: "#0333CE",
           3: "#5C8AFF",
+          4: "#052965",
         },
         green: {
           1: "#44D695",
@@ -27,6 +28,7 @@ module.exports = {
           5: "#828282",
           6: "#8D8D8D",
           7: "#CCCCCC",
+          8: "#B9B9B9",
         },
       },
       fontSize: {
@@ -56,6 +58,7 @@ module.exports = {
         4: "linear-gradient(165.14deg, #1B67A4 -0.17%, #44D695 99.52%)",
         5: "linear-gradient(161.05deg, #1B67A4 0.68%, #44D695 98.88%)",
         6: "linear-gradient(180deg, #1B67A4 0%, #5CD7A5 100%)",
+        7: "linear-gradient(135.32deg, #1B67A5 11.24%, #44D695 91.21%)",
       },
       boxShadow: {
         1: "0px 10px 25px rgba(0, 0, 0, 0.05)",

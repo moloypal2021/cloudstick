@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Flickity.CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!-- Tailwind.css -->
+    <link rel="stylesheet" href="./assets/css/tailwind.css">
+
+    <!-- Flickity.js -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
+</head>
+
+<body>
+    <!-- Heros Section Start -->
+    <section class="bg-blue-1 mb-16 sm:mb-20 md:mb-24 lg:mb-[100px] overflow-hidden">
+        <div class="container  mx-auto px-6 xl:px-25 pb-10 lg:pb-20 pt-16">
+            <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-12 lg:space-y-0">
+
+                <div class="text-center lg:text-left lg:w-1/2 2xl:w-5/12 2xl:min-w-[657px] 2xl:mt-12">
+                    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-46 font-bold text-white mb-16">A <span
+                            class="text-green-1">Reliable Backup</span> That Brings You Peace of Mind
+                    </h1>
+                    <p class="text-sm text-white lg:max-w-lg lg:pr-5 mb-11">We make backing up your data simple and
+                        snappy so you can focus more on your customer’s needs and less on operations and
+                        troubleshooting.</p>
+
+                    <a href="#"
+                        class="bg-1 px-[58px] py-3.5 rounded-lg text-sm text-white font-semibold inline-block">Check
+                        Prices</a>
+                </div>
+                <div class="lg:w-1/2 2xl:w-7/12">
+                    <img src="./assets/images/backup-heros-img.svg" alt=""
+                        class="w-full max-w-2xl lg:max-w-3xl 2xl:min-w-[665px] mx-auto  2xl:-translate-x-10">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Heros Section End -->
+
+    <!-- Pricing Range slider Section start -->
+    <section class="overflow-hidden mb-20" x-data="range()" x-init="searchTrigger()">
+        <div class="container mx-auto px-6 xl:px-28">
+            <div class="bg-white border border-gray-1 pb-7 pt-12 px-6 shadow-1 rounded-lg">
+                <div class="max-w-4xl mx-auto">
+                    <h4 class="text-xl md:text-2xl text-dark-1 text-center mb-[87px]">Look What fits your needs</h4>
+                    <!-- range -->
+                    <div class="mb-[60px]">
+                        <div class="relative w-full">
+                            <div>
+                                <input type="range" step="1" x-bind:min="minRangeValue" x-bind:max="maxRangeValue"
+                                    x-on:input="searchTrigger" x-model="rangeValue"
+                                    class="absolute top-0 bottom-0 appearance-none z-20 h-2 w-full opacity-0 cursor-pointer range-thumb">
+
+                                <div class="relative z-10 h-2.5 rounded-full">
+
+                                    <!-- Range Line -->
+                                    <div class="absolute z-10 left-0 right-0 bottom-0 top-0 rounded-md bg-dark-1">
+                                    </div>
+
+                                    <!-- Range  selected thumb -->
+                                    <div class="absolute z-20 top-0 bottom-0 left-0 rounded-md bg-blue-4"
+                                        x-bind:style="'width:'+rangeThumb+'%'">
+                                    </div>
+
+                                    <!-- Range Min Thumb -->
+                                    <div class="absolute z-30 w-10 h-10 top-0 left-0 bg-white border-4 border-blue-4 rounded-full -translate-y-4  -ml-1 cursor-pointer"
+                                        x-bind:style="'left: '+rangeThumb+'%'">
+                                    </div>
+
+                                    <!-- Range Min Thumb Text -->
+                                    <div class="absolute bottom-0 left-0 mb-9 sm:mb-11 ml-1 whitespace-nowrap"
+                                        x-bind:style="'left: '+rangeThumb+'%'">
+                                        <!-- <span x-text="rangeValue"></span> km -->
+                                        <div class="relative -mt-2 w-1">
+                                            <div
+                                                class="absolute z-40 opacity-100 bottom-100 mb-2 left-0 min-w-full sm:-translate-x-[40%] -translate-x-[32%]">
+                                                <div class="relative">
+                                                    <div
+                                                        class="bg-7 -mt-8 text-white truncate text-xs sm:text-base font-semibold rounded py-3 px-3 sm:px-[30px]">
+                                                        <span x-text="rangeValue"></span> GB
+                                                    </div>
+                                                    <svg class="absolute text-[#3BBD99] w-full h-3 left-0 top-100"
+                                                        x="0px" y="0px" viewBox="0 0 255 255" xml:space="preserve">
+                                                        <polygon class="fill-current" points="0,0 127.5,127.5 255,0">
+                                                        </polygon>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="absolute inset-x-0 top-0 flex items-center justify-between -translate-y-14">
+                                        <div class="text-base text-dark-1 font-semibold"><span
+                                                x-text="minRangeValue"></span>GB</div>
+                                        <div class="text-base text-dark-1 font-semibold"><span
+                                                x-text="maxRangeValue/1024"></span>TB</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div
+                        class="flex flex-col sm:flex-row items-center justify-between border-b border-gray-8 pb-[26px] mb-[30px]">
+                        <p class="text-sm sm:text-base text-gray-3">Estimated Backup Cost</p>
+
+                        <div class="flex items-end mb-3">
+                            <h1
+                                class="text-4xl sm:text-42 leading-10 font-semibold text-transparent bg-clip-text bg-6 mb-1">
+                                $30.00
+                            </h1>
+                            <p class="text-sm leading-10 font-semibold text-transparent bg-clip-text bg-6">/month
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <button
+                            class="bg-1 px-[77px] py-3 rounded-lg text-base text-white font-semibold inline-block">Buy
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing Range slider Section End -->
+
+
+    <!-- Content Section Start -->
+    <section class="container mx-auto px-6 xl:px-25">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-46 text-center text-dark-1 mb-20 md:mb-28 lg:mb-[145px]">Our
+            Backup System Provides </h1>
+        <div
+            class="flex flex-col-reverse lg:flex-row items-center lg:justify-between space-y-12 lg:space-y-0 space-y-reverse mb-16 sm:mb-20 md:mb-28 lg:mb-[148px]">
+            <div class="lg:max-w-xl lg:pr-5">
+                <h4 class="text-xl md:text-2xl font-semibold text-dark-1 mb-10 2xl:mb-[75px]">Superior Quality and
+                    Faster Backups
+                </h4>
+                <p class="text-base sm:text-lg md:text-xl text-dark-1">CloudStick offers an enhanced backup feature,
+                    which enables users to backup faster with less data usage than the traditional backup methods
+                    offered by other providers.</p>
+            </div>
+            <div class="lg:ml-12">
+                <img src="./assets/images/backup-img-1.svg" alt="" class="w-[484px]">
+            </div>
+        </div>
+
+        <div
+            class="flex flex-col-reverse lg:flex-row items-center lg:justify-between space-y-12 lg:space-y-0 space-y-reverse mb-11">
+            <div class="lg:max-w-xl lg:pr-5 lg:order-2">
+                <h4 class="text-xl md:text-2xl font-semibold text-dark-1 mb-10">Cost-Effective and Optimized Pricing
+                    Packages
+                </h4>
+                <p class="text-base sm:text-lg md:text-xl text-dark-1">Our backup pricing packages are highly optimized,
+                    cost effective and affordable for a freelancer to a multi-million dollar enterprise!</p>
+            </div>
+            <div class="lg:order-1 lg:mr-12">
+                <img src="./assets/images/backup-img-2.svg" alt="" class="w-[340px]">
+            </div>
+        </div>
+
+        <div
+            class="flex flex-col-reverse lg:flex-row items-center lg:justify-between space-y-12 lg:space-y-0 space-y-reverse mb-20 sm:mb-24 md:mb-32 lg:mb-[190px]">
+            <div class="lg:max-w-xl lg:pr-5">
+                <h4 class="text-xl md:text-2xl font-semibold text-dark-1 mb-10 2xl:mb-[75px]">
+                    Quick Notification
+                </h4>
+                <p class="text-base sm:text-lg md:text-xl text-dark-1">We offer notification of successful and
+                    unsuccessful backups, which allows you to know if your backup has worked..</p>
+            </div>
+            <div class="lg:ml-12">
+                <img src="./assets/images/backup-img-3.svg" alt="" class="w-[460px]">
+            </div>
+        </div>
+
+        <div
+            class="flex flex-col-reverse lg:flex-row items-center lg:justify-between space-y-12 lg:space-y-0 space-y-reverse mb-[76px]">
+            <div class="lg:max-w-xl lg:pr-5 lg:order-2">
+                <h4 class="text-xl md:text-2xl font-semibold text-dark-1 mb-10">Download backup
+                </h4>
+                <p class="text-base sm:text-lg md:text-xl text-dark-1">Your backup can be restored to your existing
+                    account or database, or you can simply restore the backup on a new account or database, per your
+                    needs. It is also possible to download the backup to a local computer with a single click.</p>
+            </div>
+            <div class="lg:order-1 lg:mr-12">
+                <img src="./assets/images/backup-img-4.svg" alt="" class="w-[298px]">
+            </div>
+        </div>
+    </section>
+    <!-- Content Section End -->
+
+
+    <!-- Newsletter Section Start -->
+    <section class="container mx-auto px-6 2xl:px-0 xl:max-w-screen-lg mb-[104px]">
+        <div class="bg-blue-1 w-full pt-11 pb-9 px-6 sm:px-16">
+            <div class="max-w-3xl mx-auto">
+                <h4 class="text-2xl font-semibold text-white mb-5 text-center lg:text-start">Subscribe to our News
+                    Letter for more content.</h4>
+                <div class="flex flex-col lg:flex-row items-center lg:space-x-2 space-y-2 lg:space-y-0">
+                    <input type="text"
+                        class="w-full border border-white bg-transparent py-3.5 px-6 rounded-lg text-sm text-white placeholder:text-white"
+                        placeholder="Email ID">
+
+                    <button
+                        class="text-sm font-semibold text-white px-12 xl:px-[70px] py-3.5 bg-1 rounded-lg">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Newsletter Section End -->
+
+
+    <script>
+        function range() {
+            return {
+                // Search Range
+                rangeValue: 800,
+                minRangeValue: 25,
+                maxRangeValue: 6144,
+                rangeThumb: 0,
+                searchTrigger() {
+                    this.rangeThumb = ((this.rangeValue - this.minRangeValue) / (this.maxRangeValue - this.minRangeValue)) * 100;
+
+                },
+
+            }
+        }
+    </script>
+
+</body>
+
+</html>
