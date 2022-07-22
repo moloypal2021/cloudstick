@@ -9,7 +9,15 @@
     @apply font-poppins;
   }
 }
+@layer components {
+  .btn-primary {
+    @apply bg-1 text-white hover:bg-8 hover:text-blue-1 transition-all duration-500 ease-linear;
+  }
 
+  .card-animation {
+    @apply transition-all duration-500 ease-in-out;
+  }
+}
 @layer utilities {
   .black-radio-input {
     @apply w-5 h-5 appearance-none relative border-2 border-gray-2 bg-transparent checked:bg-transparent focus-within:ring-black focus-within:border-2 focus-within:border-black  focus-within:text-transparent rounded-full flex items-center justify-center before:content-[''] before:bg-transparent before:w-3 before:h-3 before:absolute before:rounded-full checked:border-black checked:before:bg-black;
@@ -18,6 +26,8 @@
   .white-radio-input {
     @apply w-5 h-5 appearance-none relative border-2 border-gray-2 bg-transparent checked:bg-transparent focus-within:ring-white focus-within:border-2 focus-within:border-white  focus-within:text-transparent rounded-full flex items-center justify-center before:content-[''] before:bg-transparent before:w-3 before:h-3 before:absolute before:rounded-full checked:border-white checked:before:bg-white;
   }
+
+  /* bg-9 hover:bg-3 */
 }
 
 .homepage-testmonial .carousel-cell {
@@ -29,15 +39,26 @@
   margin-bottom: 50px;
   margin-right: 16px;
 }
+
+.homepage-testmonial .shape {
+  transform: translateY(40px);
+}
 .homepage-testmonial .cell-content {
   width: 240px;
   margin-left: auto;
   margin-right: auto;
+  transform: translateY(40px);
 }
 .homepage-testmonial .avater {
   width: 76px;
   height: 76px;
   margin-bottom: 12px;
+}
+.homepage-testmonial .avater-2 {
+  width: 76px;
+  height: 76px;
+  margin-bottom: 12px;
+  margin-top: -20px;
 }
 
 .homepage-testmonial .username {
@@ -45,12 +66,10 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
-  color: #313131;
 }
 .homepage-testmonial .desg {
   font-size: 12px;
   line-height: 18px;
-  color: #313131;
 }
 .homepage-testmonial .quote {
   width: 22px;
@@ -60,7 +79,6 @@
 .homepage-testmonial .paragraph {
   font-size: 12px;
   line-height: 18px;
-  color: #313131;
 }
 
 .homepage-testmonial .selected-shape {
@@ -80,15 +98,22 @@
   height: 433px !important;
   min-height: 433px !important;
 }
-
+.homepage-testmonial .is-selected .shape {
+  transform: translateY(0px);
+}
 .homepage-testmonial .is-selected .cell-content {
-  width: 346px;
+  width: 326px;
   margin-left: auto;
   margin-right: auto;
-  transform: translateY(-30px);
+  transform: translateY(0px);
 }
 
 .homepage-testmonial .is-selected .avater {
+  width: 102px;
+  height: 102px;
+  margin-top: 20px;
+}
+.homepage-testmonial .is-selected .avater-2 {
   width: 102px;
   height: 102px;
   margin-bottom: 20px;
@@ -99,12 +124,10 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 36px;
-  color: #fff;
 }
 .homepage-testmonial .is-selected .desg {
   font-size: 18px;
   line-height: 27px;
-  color: #fff;
 }
 .homepage-testmonial .is-selected .quote {
   width: 36px;
@@ -113,7 +136,7 @@
 .homepage-testmonial .is-selected .paragraph {
   font-size: 15px;
   line-height: 22px;
-  color: #ffffff;
+  padding-right: 16px;
 }
 
 .homepage-testmonial .is-selected .selected-shape {
@@ -171,7 +194,9 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
-
+  .homepage-testmonial .shape {
+    transform: translateY(20px);
+  }
   .homepage-testmonial .cell-content {
     width: 190px;
     transform: translateY(10px);
@@ -183,14 +208,20 @@
     margin-bottom: 4px;
   }
 
+  .homepage-testmonial .avater-2 {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 4px;
+  }
+
   .homepage-testmonial .username {
     font-size: 12px;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
+    line-height: 16px;
+    margin-bottom: 0px;
   }
   .homepage-testmonial .desg {
-    font-size: 10px;
+    font-size: 8px;
     line-height: 20px;
   }
   .homepage-testmonial .quote {
@@ -203,18 +234,28 @@
   }
 
   .homepage-testmonial .is-selected.carousel-cell {
-    min-width: 270px !important;
-    width: 270px !important;
-    height: 290px !important;
-    min-height: 290px !important;
+    min-width: 290px !important;
+    width: 290px !important;
+    height: 310px !important;
+    min-height: 310px !important;
+  }
+
+  .homepage-testmonial .is-selected .shape {
+    transform: translateY(0px);
+    color: #00173e;
   }
 
   .homepage-testmonial .is-selected .cell-content {
-    width: 240px;
-    transform: translateY(-20px);
+    width: 220px;
+    transform: translateY(0px);
   }
 
   .homepage-testmonial .is-selected .avater {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 8px;
+  }
+  .homepage-testmonial .is-selected .avater-2 {
     width: 60px;
     height: 60px;
     margin-bottom: 8px;
@@ -223,20 +264,22 @@
   .homepage-testmonial .is-selected .username {
     font-size: 16px;
     font-weight: 700;
-    font-size: 18px;
     line-height: 24px;
+    color: #fff;
   }
   .homepage-testmonial .is-selected .desg {
     font-size: 14px;
     line-height: 20px;
+    color: #fff;
   }
   .homepage-testmonial .is-selected .quote {
     width: 20px;
     margin-bottom: 2px;
   }
   .homepage-testmonial .is-selected .paragraph {
-    font-size: 12px;
-    line-height: 16px;
-    color: #ffffff;
+    font-size: 11px;
+    line-height: 14px;
+    padding-right: 12px;
+    color: #fff;
   }
 }

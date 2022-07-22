@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Aos CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Flickity.CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!-- Tailwind.css -->
+    <link rel="stylesheet" href="./assets/css/tailwind.css">
+
+    <!-- Flickity.js -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
+</head>
+
+<body>
+    <!-- Heros Section Start -->
+    <section class="bg-blue-1">
+        <div class="container mx-auto px-6 xl:px-25 pb-24 pt-16">
+            <div class="grid lg:grid-cols-2 gap-8 items-center">
+                <div class="text-center lg:text-left">
+                    <div class="text-2xl sm:text-3xl md:text-4xl 2xl:text-46 font-bold text-white mb-4">
+                        <p data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="0" data-aos-duration="300"
+                            data-aos-easing="ease-in-out" data-aos-offset="50"> Deploy
+                            servers
+                            with a</p>
+                        <p data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="300" data-aos-duration="300"
+                            data-aos-easing="ease-in-out" data-aos-offset="50">
+                            <span class="text-green-1">Super-fast</span> and
+                            highly
+                        </p>
+
+                        <p data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="600" data-aos-duration="300"
+                            data-aos-easing="ease-in-out" data-aos-offset="50"> available <span
+                                class="text-green-1">Cloud-based</span></p>
+
+                        <p data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="900" data-aos-duration="300"
+                            data-aos-easing="ease-in-out" data-aos-offset="50"> Control Panel.
+                        </p>
+                    </div>
+                    <p class="text-xs sm:text-sm text-white max-w-lg mx-auto lg:ml-0 mb-8 md:mb-14" data-aos="fade-up"
+                        data-aos-easing="ease-in-out" data-aos-delay="1200" data-aos-duration="300"
+                        data-aos-easing="ease-in-out" data-aos-offset="50">
+                        Cloudstick is an
+                        all-in-one
+                        cloud based
+                        control panel
+                        designed to
+                        manage servers from Digital Ocean Linode AWS, Google cloud, Vultr or any KVM or dedicated
+                        servers. Let's deploy together.</p>
+
+                    <div data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-delay="1600" data-aos-duration="300"
+                        data-aos-easing="ease-in-out" data-aos-offset="50"
+                        class="flex sm:flex-row flex-col space-y-6 sm:space-y-0 sm:space-x-10 items-center justify-center lg:justify-start">
+                        <a href="#" class="px-6 py-3.5 rounded-lg text-sm  font-semibold btn-primary">Start
+                            a 10 Day
+                            free trail</a>
+
+                        <a href="#"
+                            class="text-sm text-white font-semibold hover:text-green-1 transition-all duration-500 ease-linear">Learn
+                            more</a>
+                    </div>
+                </div>
+                <div data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-delay="1600" data-aos-duration="300"
+                    data-aos-easing="ease-in-out" data-aos-offset="50">
+                    <img src="./assets/images/homepage-heros-img.png" alt=""
+                        class="w-full max-w-2xl lg:max-w-3xl mx-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Heros Section End -->
+
+    <!-- Stats Section Start -->
+    <section class="pt-16 sm:pt-20 md:pt-28 lg:pt-40 pb-12 sm:pb-16 md:pb-20 lg:pb-24 relative">
+        <!-- Globe Animation -->
+        <div class="absolute inset-0 w-full h-full items-center justify-center flex">
+            <img src="./assets/images/globe.gif" alt="" class="max-w-md m-auto w-full translate-y-16 opacity-10">
+        </div>
+        <div class="container mx-auto md:max-w-3xl lg:max-w-5xl px-6 relative z-10">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-46 text-center text-dark-1 mb-12">Managing the Globe
+            </h1>
+            <div class="grid md:grid-cols-4 sm:grid-cols-2 gap-8">
+                <div class="text-center sm:text-left">
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold bg-2 bg-clip-text text-transparent">500
+                    </h1>
+                    <p class="text-lg sm:text-xl lg:text-2xl font-semibold text-dark-1">Servers </p>
+                </div>
+                <div class="text-center sm:text-right md:text-center">
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold bg-2 bg-clip-text text-transparent">321
+                    </h1>
+                    <p class="text-lg sm:text-xl lg:text-2xl font-semibold text-dark-1">Databases</p>
+                </div>
+                <div class="text-center sm:text-left md:text-center">
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold bg-2 bg-clip-text text-transparent">499
+                    </h1>
+                    <p class="text-lg sm:text-xl lg:text-2xl font-semibold text-dark-1">Applications </p>
+                </div>
+                <div class="text-center sm:text-right">
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold bg-2 bg-clip-text text-transparent">489
+                    </h1>
+                    <p class="text-lg sm:text-xl lg:text-2xl font-semibold text-dark-1">Domains </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Stats Section End -->
+
+    <!-- Client Section Start -->
+    <section class="container mx-auto px-6 pt-8 sm:pt-10 md:pt-12 lg:pt-14 pb-12 sm:pb-16 md:pb-20 lg:pb-24">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-46 text-center text-dark-1 mb-8 sm:mb-10 md:mb-12">Easy
+            Install</h1>
+        <p class="text-sm md:text-base text-center text-dark-10 max-w-5xl mx-auto mb-16">
+            With CloudStick’s powerful one-click app installers, CMS and Web Applications installations have never been
+            easier. One-click application and software installers empower users to create web applications with just a
+            single click – convenience at its finest!CloudStick offers a cornucopia of rich features to manage a range
+            of Web Applications and CMS.
+        </p>
+
+        <div class="flex flex-wrap items-center justify-center mt-1 -mx-3 sm:-mx-6 mb-11">
+            <img src="./assets/images/joomla.png" alt=""
+                class="w-20 min-w-[80px] sm:w-[136px] sm:min-w-[136px] m-3 sm:m-7">
+            <img src="./assets/images/moodle.png" alt=""
+                class="w-16 min-w-[64px] sm:w-[112px] sm:min-w-[112px] m-3 sm:m-7">
+            <img src="./assets/images/nextcloud.png" alt=""
+                class="w-16 min-w-[64px] sm:w-[109px] sm:min-w-[109px] m-3 sm:m-7">
+            <img src="./assets/images/Node.png" alt=""
+                class="w-14 min-w-[56px] sm:w-[102px] sm:min-w-[102px] m-3 sm:m-7">
+            <img src="./assets/images/joomla.png" alt=""
+                class="w-20 min-w-[80px] sm:w-[136px] sm:min-w-[136px] m-3 sm:m-7">
+            <img src="./assets/images/wordpress.png" alt=""
+                class="w-20 min-w-[75px] sm:w-[126px] sm:min-w-[126px] m-3 sm:m-7">
+            <img src="./assets/images/arch.png" alt="" class="w-10 min-w-[40px] sm:w-[80px] sm:min-w-[80px] m-3 sm:m-7">
+            <img src="./assets/images/prestashop.png" alt=""
+                class="w-16 min-w-[64px] sm:w-[101px] sm:min-w-[101px] m-3 sm:m-7">
+        </div>
+
+        <p class="text-sm md:text-base text-center text-dark-1 max-w-2xl mx-auto">Enable high-speed server
+            configurations leveraging CloudStick – for both custom and complete server installations.You don’t have to
+            be an expert to use it, and it eliminates hardware acquisition, provisioning and maintenance expenses.</p>
+
+        <div class="flex flex-wrap items-center justify-center mt-1 -mx-3 sm:-mx-4 mb-11">
+            <img src="./assets/images/linode.png" alt=""
+                class="w-20 min-w-[80px] sm:w-[134px] sm:min-w-[134px] m-3 sm:m-5">
+            <img src="./assets/images/aws.png" alt=""
+                class="w-16 min-w-[64px] sm:w-[126px] sm:min-w-[126px] m-3 sm:m-5">
+            <img src="./assets/images/g-cloud.png" alt=""
+                class="w-16 min-w-[64px] sm:w-[96px] sm:min-w-[96px] m-3 sm:m-5">
+            <img src="./assets/images/vultr.png" alt=""
+                class="w-14 min-w-[56px] sm:w-[93px] sm:min-w-[93px] m-3 sm:m-5">
+            <img src="./assets/images/upcloud.png" alt=""
+                class="w-24 min-w-[96px] sm:w-[164px] sm:min-w-[164px] m-3 sm:m-5">
+            <img src="./assets/images/digitalocen.png" alt=""
+                class="w-14 min-w-[56px] sm:w-[90px] sm:min-w-[90px] m-3 sm:m-5">
+        </div>
+    </section>
+    <!-- Client Section End -->
+
+
+    <!-- CTA Section Start -->
+    <section
+        class="bg-blue-1 mt-8 sm:mt-10 md:mt-12 lg:mt-14 mb-16 sm:mb-20 md:mb-28 lg:mb-[150px] relative overflow-hidden">
+        <div class="absolute left-0 inset-y-0 overflow-hidden flex items-center">
+            <img src="./assets/images/connection-animation.gif" alt=""
+                class="max-w-xs w-full rotate-90 -translate-x-20">
+        </div>
+        <div class="container mx-auto px-6 pt-11 pb-14 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center lg:items-end justify-center">
+                <div class="text-center lg:text-left lg:mr-28">
+                    <h5 class="text-xl md:text-2xl font-semibold text-white mb-8">Ready to jump on the cloud bandwagon ?
+                    </h5>
+                    <p class="text-sm text-white mb-8 lg:mb-3">Kickstart your journey to the cloud and grow your
+                        business</p>
+                </div>
+
+                <a href="#" class="py-3.5 px-6 text-sm font-semibold btn-primary rounded-lg">Start a 10 Day free
+                    trail</a>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section End -->
+
+    <!-- Features Section Start -->
+    <section class="container mx-auto px-6 xl:px-25 mb-12 sm:mb-14 md:mb-20 lg:mb-[104px]">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-46 text-dark-1 text-center mb-14 sm:mb-16 md:mb-20">Key
+            Featues</h1>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-14 lg:gap-16 xl:gap-20 2xl:gap-24">
+            <div>
+                <img src="./assets/images/features-icon-1.svg" alt="" class="w-[72px] mb-1">
+                <h6 class="text-base font-semibold text-dark-1 mb-5">Advanced Security Firewall</h6>
+                <p class="text-sm text-dark-1">All CloudStick hosted servers are secured and protected by an advanced OS
+                    – level firewall that weeds out or blocks malicious intruders and unauthorized traffic. Servers also
+                    feature advanced filter criteria and settings</p>
+            </div>
+            <div>
+                <img src="./assets/images/features-icon-2.svg" alt="" class="w-[72px] mb-1">
+                <h6 class="text-base font-semibold text-dark-1 mb-5">Easy PHP & stack Modifications</h6>
+                <p class="text-sm text-dark-1">Speedy installations of PHP extensions, Apache modules, and other
+                    packages. With just a few clicks the solution automatically compiles and deploys the Web Application
+                    extensions.</p>
+            </div>
+            <div>
+                <img src="./assets/images/features-icon-3.svg" alt="" class="w-[72px] mb-1">
+                <h6 class="text-base font-semibold text-dark-1 mb-5">Advanced Statistics & Reports</h6>
+                <p class="text-sm text-dark-1">Gain valuable insights into logs and metrics, instantly. Generate key
+                    reports with advanced stats on Country wise, Browser-wise and IP-wise access logs, aggregate overall
+                    bandwidth utilization, memory, disk usage and other metrics</p>
+            </div>
+            <div>
+                <img src="./assets/images/features-icon-4.svg" alt="" class="w-[72px] mb-1">
+                <h6 class="text-base font-semibold text-dark-1 mb-5">Readable Automated Backups</h6>
+                <p class="text-sm text-dark-1">We know how important data backups are to any business! Schedule
+                    automatic backups for web apps or databases in our highly secure backup facility that meets
+                    industry-recommended security standards.</p>
+            </div>
+            <div>
+                <img src="./assets/images/features-icon-1.svg" alt="" class="w-[72px] mb-1">
+                <h6 class="text-base font-semibold text-dark-1 mb-5">Advanced Security Firewall</h6>
+                <p class="text-sm text-dark-1">All CloudStick hosted servers are secured and protected by an advanced OS
+                    – level firewall that weeds out or blocks malicious intruders and unauthorized traffic. Servers also
+                    feature advanced filter criteria and settings</p>
+            </div>
+            <div>
+                <img src="./assets/images/features-icon-2.svg" alt="" class="w-[72px] mb-1">
+                <h6 class="text-base font-semibold text-dark-1 mb-5">Easy PHP & stack Modifications</h6>
+                <p class="text-sm text-dark-1">Speedy installations of PHP extensions, Apache modules, and other
+                    packages. With just a few clicks the solution automatically compiles and deploys the Web Application
+                    extensions.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Features Section End -->
+
+
+    <!-- Pricing Section Start -->
+    <section class="bg-light-1 py-12">
+        <div class="container mx-auto px-6 xl:px-25">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-46 text-center text-dark-1 mb-12">Pricing </h1>
+            <p class="text-base font-semibold text-dark-1 text-center mb-[70px]">Most affordable in the industry by far.
+                Choose plans that fit your needs.</p>
+            <div class="flex flex-wrap lg:flex-nowrap items-center justify-center mb-6">
+                <div
+                    class="max-w-[305px] w-full border border-gray-1 pt-2.5 pb-8 px-6 sm:px-12 rounded-lg shadow-1 my-5 sm:m-5 xl:m-8 2xl:m-9 group bg-white relative overflow-hidden">
+                    <div class="relative z-20">
+                        <h4
+                            class="text-2xl font-semibold text-dark-1 group-hover:text-white card-animation text-center mb-3">
+                            Free</h4>
+                        <div class="flex items-end justify-center mb-3">
+                            <h1
+                                class="text-42 leading-10 font-semibold text-transparent bg-clip-text group-hover:text-white card-animation bg-6 mb-1">
+                                $0</h1>
+                            <p
+                                class="text-sm leading-10 font-semibold text-transparent bg-clip-text group-hover:text-white card-animation bg-6">
+                                /month</p>
+                        </div>
+                        <ul class="space-y-4 mb-7 text-black group-hover:text-white card-animation">
+                            <li class="text-xs">1 Server</li>
+                            <li class="text-xs">Unlimited Hosting Accounts</li>
+                            <li class="text-xs">One-click SSL</li>
+                            <li class="text-xs">Server Firewall</li>
+                            <li class="text-xs">Sub Domains</li>
+                            <li class="text-xs">EasyPHP</li>
+                            <li class="text-xs">User Quota
+                            <li class="text-xs">Multiple PHP Versions</li>
+                            <li class="text-xs">Git deployment</li>
+                            <li class="text-xs">SFTP & Additional FTP Accounts</li>
+                        </ul>
+
+                        <div class="text-center">
+                            <a href="#"
+                                class="text-sm font-semibold text-blue-2 group-hover:text-white card-animation">More</a>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute inset-0 w-1/2 ml-auto bg-white/10 z-10 opacity-0 group-hover:opacity-100 card-animation">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-3 w-full h-full z-0 opacity-0 group-hover:opacity-100 card-animation">
+                    </div>
+                </div>
+
+                <div
+                    class="max-w-[332px] w-full border border-gray-1 pt-2.5 pb-8 px-6 sm:px-14 rounded-lg shadow-1 my-5 sm:m-5 xl:m-8 2xl:m-9 group relative overflow-hidden">
+                    <div class="relative z-10">
+                        <h4
+                            class="text-2xl font-semibold text-dark-1 group-hover:text-white card-animation text-center mb-5">
+                            Standard</h4>
+                        <div class="flex items-end justify-center mb-5">
+                            <h1
+                                class="text-42 leading-10 font-semibold text-transparent bg-clip-text group-hover:text-white card-animation bg-6 mb-1">
+                                $6.50</h1>
+                            <p
+                                class="text-sm leading-10 font-semibold text-transparent bg-clip-text group-hover:text-white card-animation bg-6">
+                                /month</p>
+                        </div>
+                        <ul class="space-y-4 mb-10 text-black group-hover:text-white card-animation">
+                            <li class="text-xs">1 Server</li>
+                            <li class="text-xs">Unlimited Hosting Accounts</li>
+                            <li class="text-xs">One-click SSL</li>
+                            <li class="text-xs">Server Firewall</li>
+                            <li class="text-xs">Sub Domains</li>
+                            <li class="text-xs">EasyPHP</li>
+                            <li class="text-xs">User Quota
+                            <li class="text-xs">Multiple PHP Versions</li>
+                            <li class="text-xs">Git deployment</li>
+                            <li class="text-xs">SFTP & Additional FTP Accounts</li>
+                        </ul>
+
+                        <div class="text-center">
+                            <a href="#"
+                                class="text-sm font-semibold text-blue-2 group-hover:text-white card-animation">More</a>
+                        </div>
+                    </div>
+                    <div class="absolute right-0 top-0 z-10 flex justify-center mr-4">
+                        <p class="text-xs text-white [writing-mode:vertical-rl] absolute inset-0 m-2">Most Popular</p>
+                        <svg class="fill-current group-hover:text-[#F2911F]  text-[#2581A1] card-animation" width="31"
+                            height="109" viewBox="0 0 31 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M31 0L31 109C12.9167 93.4286 18.7292 93.4286 -1.74457e-06 109L3.01997e-06 -1.35505e-06L31 0Z"
+                                fill="current" />
+                        </svg>
+                    </div>
+                    <div
+                        class="absolute inset-0 w-1/2 ml-auto bg-white/10 z-10 opacity-0 group-hover:opacity-100 card-animation">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-3 w-full h-full z-0 opacity-0 group-hover:opacity-100 card-animation">
+                    </div>
+                </div>
+
+
+                <div
+                    class="max-w-[305px] w-full bg-white border border-gray-1 pt-2.5 pb-8 px-6 sm:px-12 rounded-lg shadow-1 my-5 sm:m-5 xl:m-8 2xl:m-9 group relative overflow-hidden">
+                    <div class="relative z-10">
+                        <h4
+                            class="text-2xl font-semibold text-dark-1 group-hover:text-white card-animation text-center mb-3">
+                            Pro</h4>
+                        <div class="flex items-end justify-center mb-3">
+                            <h1
+                                class="text-42 leading-10 font-semibold text-transparent bg-clip-text group-hover:text-white card-animation bg-6 mb-1">
+                                $12.50
+                            </h1>
+                            <p
+                                class="text-sm leading-10 font-semibold text-transparent bg-clip-text group-hover:text-white card-animation bg-6">
+                                /month</p>
+                        </div>
+                        <ul class="space-y-4 mb-7 text-black group-hover:text-white card-animation">
+                            <li class="text-xs">1 Server</li>
+                            <li class="text-xs">Unlimited Hosting Accounts</li>
+                            <li class="text-xs">One-click SSL</li>
+                            <li class="text-xs">Server Firewall</li>
+                            <li class="text-xs">Sub Domains</li>
+                            <li class="text-xs">EasyPHP</li>
+                            <li class="text-xs">User Quota
+                            <li class="text-xs">Multiple PHP Versions</li>
+                            <li class="text-xs">Git deployment</li>
+                            <li class="text-xs">SFTP & Additional FTP Accounts</li>
+                        </ul>
+
+                        <div class="text-center">
+                            <a href="#"
+                                class="text-sm font-semibold text-blue-2 group-hover:text-white card-animation">More</a>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute inset-0 w-1/2 ml-auto bg-white/10 z-10 opacity-0 group-hover:opacity-100 card-animation">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-3 w-full h-full z-0 opacity-0 group-hover:opacity-100 card-animation">
+                    </div>
+                </div>
+            </div>
+
+            <h6 class="text-base font-semibold text-center text-blue-3">View full price breakup</h6>
+        </div>
+    </section>
+    <!-- Pricing Section End -->
+
+
+    <!-- Testmonial Section Start -->
+    <section class="container mx-auto px-6 2xl:px-[144px] mb-10">
+        <div class="homepage-testmonial w-full" x-data="carousel()">
+
+            <div class="flex items-center justify-center space-x-5 md:space-x-7 mb-[72px]">
+                <button class="min-w-[40px]" @click="prev()">
+                    <svg class="w-6 sm:w-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25 10L15 20L25 30" stroke="#3DA0A4" stroke-width="5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="text-center">
+                    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-46 text-dark-1">What Our Clients Say About Us
+                    </h1>
+                </div>
+
+                <button class="min-w-[40px]" @click="next()">
+                    <svg class="w-6 sm:w-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 30L25 20L15 10" stroke="#3DA0A4" stroke-width="5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+
+                </button>
+            </div>
+
+
+            <div class="w-full items-center relative" x-ref="carousel">
+                <div class="carousel-cell">
+                    <div class="relative w-full h-full group">
+                        <svg class="w-full text-white group-hover:text-[#00173E] fill-current transition-all duration-300 shape"
+                            viewBox="0 0 346 406" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M37.6868 78.379C40.7256 156.216 42.7452 198.621 49.3207 262.625C54.883 287.099 60.7669 297.226 79.8597 304.134C155.897 325.839 209.237 343.216 271.092 358.024C296.277 357.42 305.255 350.859 313.265 336.177C326.953 284.391 329.512 227.689 339.442 155.573C340.773 127.761 335.267 116.465 313.265 104.596C232.658 70.7466 115.489 24.489 115.489 24.489C115.489 24.489 93.0918 13.7125 79.8597 16.4784C64.3842 21.3314 57.6517 26.7048 49.3207 37.5974C39.7095 50.4499 37.1921 59.3868 37.6868 78.379Z"
+                                fill="url(#paint0_linear_224_506)" />
+                            <g filter="url(#filter0_d_224_506)">
+                                <path
+                                    d="M33.8197 76.8502C26.8797 154.437 23.4599 196.752 21.7966 261.071C24.1834 286.056 28.724 296.852 46.7766 306.145C119.414 337.395 170.093 361.451 229.548 384.048C254.602 386.669 264.346 381.31 274.168 367.773C294.365 318.162 304.155 262.253 323.225 191.999C328.102 164.586 324.087 152.679 303.783 138.093C228.166 94.2136 117.874 33.352 117.874 33.352C117.874 33.352 97.0395 19.7999 83.5624 20.8509C67.5933 23.685 60.2289 28.1534 50.5733 37.8912C39.3974 49.409 35.7579 57.9507 33.8197 76.8502Z"
+                                    fill="current" />
+                                <path
+                                    d="M33.8197 76.8502C26.8797 154.437 23.4599 196.752 21.7966 261.071C24.1834 286.056 28.724 296.852 46.7766 306.145C119.414 337.395 170.093 361.451 229.548 384.048C254.602 386.669 264.346 381.31 274.168 367.773C294.365 318.162 304.155 262.253 323.225 191.999C328.102 164.586 324.087 152.679 303.783 138.093C228.166 94.2136 117.874 33.352 117.874 33.352C117.874 33.352 97.0395 19.7999 83.5624 20.8509C67.5933 23.685 60.2289 28.1534 50.5733 37.8912C39.3974 49.409 35.7579 57.9507 33.8197 76.8502Z"
+                                    stroke="#EDEDED" />
+                            </g>
+                            <defs>
+                                <filter id="filter0_d_224_506" x="1.2959" y="0.292969" width="344.304" height="404.899"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feOffset />
+                                    <feGaussianBlur stdDeviation="10" />
+                                    <feComposite in2="hardAlpha" operator="out" />
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+                                    <feBlend mode="normal" in2="BackgroundImageFix"
+                                        result="effect1_dropShadow_224_506" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_224_506"
+                                        result="shape" />
+                                </filter>
+                                <linearGradient id="paint0_linear_224_506" x1="188.628" y1="16.0244" x2="188.628"
+                                    y2="358.024" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#1B67A4" />
+                                    <stop offset="1" stop-color="#5CD6A5" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                        <div class="cell-content absolute inset-0 z-10">
+                            <img src="./assets/images/avater-1.jpg" alt=""
+                                class="avater mx-auto object-cover rounded-full">
+                            <h5 class="username text-dark-1 group-hover:text-white text-center">Sree kutty</h5>
+                            <p class="desg text-dark-1 group-hover:text-white text-center">Lead designer</p>
+                            <svg class="quote mx-auto" viewBox="0 0 23 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.876 11.02c-.452.001-.897.12-1.29.342a8.824 8.824 0 0 1 2.665-3.667.673.673 0 0 0-.856-1.039c-2.444 1.987-3.532 4.737-3.532 6.442a3.104 3.104 0 0 0 1.876 2.829c.358.174.75.265 1.149.269a2.59 2.59 0 0 0 2.507-3.609 2.59 2.59 0 0 0-2.507-1.567h-.012ZM14.684 11.02a2.622 2.622 0 0 0-1.29.343 8.862 8.862 0 0 1 2.659-3.667.672.672 0 1 0-.85-1.039c-2.444 1.986-3.532 4.736-3.532 6.441a3.105 3.105 0 0 0 1.833 2.817c.368.18.771.271 1.18.27a2.591 2.591 0 1 0 0-5.177v.013Z"
+                                    fill="#3DA0A4" />
+                            </svg>
+                            <p class="paragraph text-center text-dark-1 group-hover:text-white">Lorem ipsum dolor sit
+                                amet, consectetur
+                                adipiscing
+                                elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget
+                                nibh
+                                in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus
+                                pellentesque enim </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="relative w-full h-full group">
+                        <svg class="w-full text-white group-hover:text-[#00173E] fill-current transition-all duration-300 shape"
+                            viewBox="0 0 435 433" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M101.139 0C69.8073 7.93582 61.1006 16.4044 55.6279 36.0747L73.6755 378H407.164C427.902 366.931 434.265 350.44 434.628 299.577C424.333 197.51 411.769 139.329 393.04 36.0747C383.596 21.7603 381.543 12.2025 344.39 10.9793L101.139 0Z"
+                                fill="url(#paint0_linear_224_508)" />
+                            <path
+                                d="M0.62793 337.695L38.1479 55.5321C47.1267 34.2465 55.1274 24.4931 81.671 13.5078C165.554 5.63801 233.499 3.95855 347.312 0C376.645 8.8112 394.238 13.5281 408.845 55.5321C412.328 169.345 415.995 250.574 415.598 324.938C414.4 357.978 407.046 371.127 381.08 384.222C223.725 413.091 137.615 428.655 63.6614 433C19.065 419.114 0.955128 399.961 0.62793 337.695Z"
+                                fill="current" />
+                            <defs>
+                                <linearGradient id="paint0_linear_224_508" x1="245.128" y1="0" x2="245.128" y2="378"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#1E6AA1" />
+                                    <stop offset="1" stop-color="#59D0A5" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                        <div class="cell-content absolute inset-0 z-10">
+                            <img src="./assets/images/avater-2.jpg" alt=""
+                                class="avater-2 mx-auto object-cover rounded-full">
+                            <h5 class="username text-dark-1 group-hover:text-white text-center">Ashwini Mohan</h5>
+                            <p class="desg text-dark-1 group-hover:text-white text-center">Lead designer</p>
+                            <svg class="quote mx-auto" viewBox="0 0 23 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.876 11.02c-.452.001-.897.12-1.29.342a8.824 8.824 0 0 1 2.665-3.667.673.673 0 0 0-.856-1.039c-2.444 1.987-3.532 4.737-3.532 6.442a3.104 3.104 0 0 0 1.876 2.829c.358.174.75.265 1.149.269a2.59 2.59 0 0 0 2.507-3.609 2.59 2.59 0 0 0-2.507-1.567h-.012ZM14.684 11.02a2.622 2.622 0 0 0-1.29.343 8.862 8.862 0 0 1 2.659-3.667.672.672 0 1 0-.85-1.039c-2.444 1.986-3.532 4.736-3.532 6.441a3.105 3.105 0 0 0 1.833 2.817c.368.18.771.271 1.18.27a2.591 2.591 0 1 0 0-5.177v.013Z"
+                                    fill="#3DA0A4" />
+                            </svg>
+                            <p class="paragraph text-center text-dark-1 group-hover:text-white">Lorem ipsum dolor sit
+                                amet, consectetur
+                                adipiscing
+                                elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget
+                                nibh
+                                in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus
+                                pellentesque enim </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-cell">
+                    <div class="relative w-full h-full group">
+                        <svg class="w-full text-white group-hover:text-[#00173E] fill-current transition-all duration-300 shape"
+                            viewBox="0 0 346 405" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_224_507)">
+                                <path
+                                    d="M311.44 76.8502C318.38 154.437 321.8 196.752 323.463 261.071C321.077 286.056 316.536 296.852 298.483 306.145C225.845 337.395 175.165 361.451 115.71 384.048C90.6547 386.669 80.9107 381.31 71.0888 367.773C50.8912 318.162 41.1011 262.253 22.0309 191.999C17.1542 164.586 21.1698 152.679 41.4735 138.093C117.091 94.2136 227.385 33.352 227.385 33.352C227.385 33.352 248.22 19.7999 261.697 20.8509C277.666 23.685 285.031 28.1534 294.686 37.8912C305.862 49.409 309.502 57.9507 311.44 76.8502Z"
+                                    fill="url(#paint0_linear_224_507)" />
+                            </g>
+                            <path
+                                d="M307.941 78.379C304.902 156.216 302.883 198.621 296.307 262.625C290.745 287.099 284.861 297.226 265.768 304.134C189.73 325.839 136.389 343.216 74.5327 358.024C49.348 357.42 40.3693 350.859 32.3592 336.177C18.6718 284.391 16.1119 227.689 6.18256 155.573C4.85159 127.761 10.3569 116.465 32.3592 104.596C112.967 70.7466 230.138 24.489 230.138 24.489C230.138 24.489 252.535 13.7125 265.768 16.4784C281.243 21.3314 287.976 26.7048 296.307 37.5974C305.918 50.4499 308.436 59.3868 307.941 78.379Z"
+                                fill="current" stroke="#EDEDED" />
+                            <defs>
+                                <filter id="filter0_d_224_507" x="0.15625" y="0.792969" width="343.308" height="403.899"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feOffset />
+                                    <feGaussianBlur stdDeviation="10" />
+                                    <feComposite in2="hardAlpha" operator="out" />
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+                                    <feBlend mode="normal" in2="BackgroundImageFix"
+                                        result="effect1_dropShadow_224_507" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_224_507"
+                                        result="shape" />
+                                </filter>
+                                <linearGradient id="paint0_linear_224_507" x1="153.762" y1="34.3101" x2="197.497"
+                                    y2="373.502" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#1E6BA1" />
+                                    <stop offset="1" stop-color="#56CBA5" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                        <div class="cell-content absolute inset-0 z-10">
+                            <img src="./assets/images/avater-3.jpg" alt=""
+                                class="avater mx-auto object-cover rounded-full">
+                            <h5 class="username text-dark-1 group-hover:text-white text-center">Anjali Mishra</h5>
+                            <p class="desg text-dark-1 group-hover:text-white text-center">Lead designer</p>
+                            <svg class="quote mx-auto" viewBox="0 0 23 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.876 11.02c-.452.001-.897.12-1.29.342a8.824 8.824 0 0 1 2.665-3.667.673.673 0 0 0-.856-1.039c-2.444 1.987-3.532 4.737-3.532 6.442a3.104 3.104 0 0 0 1.876 2.829c.358.174.75.265 1.149.269a2.59 2.59 0 0 0 2.507-3.609 2.59 2.59 0 0 0-2.507-1.567h-.012ZM14.684 11.02a2.622 2.622 0 0 0-1.29.343 8.862 8.862 0 0 1 2.659-3.667.672.672 0 1 0-.85-1.039c-2.444 1.986-3.532 4.736-3.532 6.441a3.105 3.105 0 0 0 1.833 2.817c.368.18.771.271 1.18.27a2.591 2.591 0 1 0 0-5.177v.013Z"
+                                    fill="#3DA0A4" />
+                            </svg>
+                            <p class="paragraph text-center text-dark-1 group-hover:text-white">Lorem ipsum dolor
+                                sit
+                                amet, consectetur
+                                adipiscing
+                                elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget
+                                nibh
+                                in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus
+                                pellentesque enim </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="relative w-full h-full group">
+                        <svg class="w-full text-white group-hover:text-[#00173E] fill-current transition-all duration-300 shape"
+                            viewBox="0 0 346 405" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_224_507)">
+                                <path
+                                    d="M311.44 76.8502C318.38 154.437 321.8 196.752 323.463 261.071C321.077 286.056 316.536 296.852 298.483 306.145C225.845 337.395 175.165 361.451 115.71 384.048C90.6547 386.669 80.9107 381.31 71.0888 367.773C50.8912 318.162 41.1011 262.253 22.0309 191.999C17.1542 164.586 21.1698 152.679 41.4735 138.093C117.091 94.2136 227.385 33.352 227.385 33.352C227.385 33.352 248.22 19.7999 261.697 20.8509C277.666 23.685 285.031 28.1534 294.686 37.8912C305.862 49.409 309.502 57.9507 311.44 76.8502Z"
+                                    fill="url(#paint0_linear_224_507)" />
+                            </g>
+                            <path
+                                d="M307.941 78.379C304.902 156.216 302.883 198.621 296.307 262.625C290.745 287.099 284.861 297.226 265.768 304.134C189.73 325.839 136.389 343.216 74.5327 358.024C49.348 357.42 40.3693 350.859 32.3592 336.177C18.6718 284.391 16.1119 227.689 6.18256 155.573C4.85159 127.761 10.3569 116.465 32.3592 104.596C112.967 70.7466 230.138 24.489 230.138 24.489C230.138 24.489 252.535 13.7125 265.768 16.4784C281.243 21.3314 287.976 26.7048 296.307 37.5974C305.918 50.4499 308.436 59.3868 307.941 78.379Z"
+                                fill="current" stroke="#EDEDED" />
+                            <defs>
+                                <filter id="filter0_d_224_507" x="0.15625" y="0.792969" width="343.308" height="403.899"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feOffset />
+                                    <feGaussianBlur stdDeviation="10" />
+                                    <feComposite in2="hardAlpha" operator="out" />
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+                                    <feBlend mode="normal" in2="BackgroundImageFix"
+                                        result="effect1_dropShadow_224_507" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_224_507"
+                                        result="shape" />
+                                </filter>
+                                <linearGradient id="paint0_linear_224_507" x1="153.762" y1="34.3101" x2="197.497"
+                                    y2="373.502" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#1E6BA1" />
+                                    <stop offset="1" stop-color="#56CBA5" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                        <div class="cell-content absolute inset-0 z-10">
+                            <img src="./assets/images/avater-3.jpg" alt=""
+                                class="avater mx-auto object-cover rounded-full">
+                            <h5 class="username text-dark-1 group-hover:text-white text-center">Anjali Mishra</h5>
+                            <p class="desg text-dark-1 group-hover:text-white text-center">Lead designer</p>
+                            <svg class="quote mx-auto" viewBox="0 0 23 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.876 11.02c-.452.001-.897.12-1.29.342a8.824 8.824 0 0 1 2.665-3.667.673.673 0 0 0-.856-1.039c-2.444 1.987-3.532 4.737-3.532 6.442a3.104 3.104 0 0 0 1.876 2.829c.358.174.75.265 1.149.269a2.59 2.59 0 0 0 2.507-3.609 2.59 2.59 0 0 0-2.507-1.567h-.012ZM14.684 11.02a2.622 2.622 0 0 0-1.29.343 8.862 8.862 0 0 1 2.659-3.667.672.672 0 1 0-.85-1.039c-2.444 1.986-3.532 4.736-3.532 6.441a3.105 3.105 0 0 0 1.833 2.817c.368.18.771.271 1.18.27a2.591 2.591 0 1 0 0-5.177v.013Z"
+                                    fill="#3DA0A4" />
+                            </svg>
+                            <p class="paragraph text-center text-dark-1 group-hover:text-white">Lorem ipsum dolor sit
+                                amet, consectetur
+                                adipiscing
+                                elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget
+                                nibh
+                                in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus
+                                pellentesque enim </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testmonial Section End -->
+
+
+    <!-- Rating Trustpilot Section Start -->
+    <section class="container mx-auto px-6 xl:px-2 xl:max-w-screen-lg mt-10 mb-16 sm:mb-20 md:mb-28 lg:mb-[150px]">
+        <div
+            class="flex lg:flex-row flex-col space-y-12 lg:space-y-0 lg:space-x-12 xl:space-x-[75px] items-center lg:items-start">
+
+            <div class="max-w-[345px] w-full text-center">
+                <img src="./assets/images/trustpilot.png" alt="" class="w-full mb-4">
+                <a href="#" class="text-base font-semibold  text-blue-3">View all Reviews</a>
+            </div>
+            <div class="w-full">
+                <h4 class="text-2xl font-semibold text-dark-1 mb-2.5">Rated 5 star on Trustpilot</h4>
+                <p class="text-sm text-dark-1">CloudStick offers a wide portfolio of proven cloud delivery and
+                    management features, advanced security, comprehensive reports and statistics, Web App controls,
+                    integrations and more.
+                    <br><br>
+                    Our expert web architects will tailor hosting solutions with the appropriate agility that your
+                    enterprise needs to scale and grow.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Rating Trustpilot Section End -->
+
+
+
+    <!-- Newsletter Section Start -->
+    <section class="container mx-auto px-6 2xl:px-0 xl:max-w-screen-lg mb-[104px]">
+        <div class="bg-blue-1 w-full pt-11 pb-9 px-6 sm:px-16">
+            <div class="max-w-3xl mx-auto">
+                <h4 class="text-2xl font-semibold text-white mb-5 text-center lg:text-start">Subscribe to our News
+                    Letter for more content.</h4>
+                <div class="flex flex-col lg:flex-row items-center lg:space-x-2 space-y-2 lg:space-y-0">
+                    <input type="text"
+                        class="w-full border border-white bg-transparent py-3.5 px-6 rounded-lg text-sm text-white placeholder:text-white"
+                        placeholder="Email ID">
+
+                    <button
+                        class="text-sm font-semibold text-white px-12 xl:px-[70px] py-3.5 bg-1 rounded-lg">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Newsletter Section End -->
+
+
+    <!-- Aos js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+
+        AOS.init({
+            duration: 3000,
+        });
+
+
+
+
+
+        function carousel() {
+            return {
+                active: 0,
+                init() {
+                    var flkty = new Flickity(this.$refs.carousel, {
+                        wrapAround: true,
+                        prevNextButtons: false,
+                        pageDots: true,
+                        cellAlign: 'center',
+                        contain: true,
+                        adaptiveHeight: true,
+                        resize: true
+                    });
+                    flkty.on('change', i => {
+                        this.active = i;
+                        flkty.reloadCells();
+                    });
+                    this.next();
+                },
+                prev() {
+                    var flkty = new Flickity(this.$refs.carousel);
+                    flkty.previous();
+                    flkty.reloadCells();
+
+                },
+                next() {
+                    var flkty = new Flickity(this.$refs.carousel);
+                    flkty.next();
+                    flkty.reloadCells();
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
