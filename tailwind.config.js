@@ -68,6 +68,15 @@ module.exports = {
         3: "-4px 4px 4px rgba(0, 0, 0, 0.08)",
         4: "0px 4px 42px rgba(0, 0, 0, 0.06)",
       },
+      keyframes: {
+        colorChange: {
+          "0%, 100%": { opacity: "0" },
+          "50%": { opacity: "1" },
+        },
+      },
+      animation: {
+        colorChange: "colorChange 3s ease-in-out infinite",
+      },
     },
   },
   plugins: [
