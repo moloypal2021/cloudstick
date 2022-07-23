@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Aos CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Flickity.CSS -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
@@ -26,22 +29,31 @@
             <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-12 lg:space-y-0">
 
                 <div class="text-center lg:text-left lg:w-1/2 2xl:w-5/12 2xl:min-w-[657px] 2xl:mt-12">
-                    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-46 font-bold text-white mb-9">
-                        Powerful and <span class="text-green-1">Feature-rich</span> Database Management</h1>
+                    <div class="text-2xl sm:text-3xl md:text-4xl 2xl:text-46 font-bold text-white mb-9">
+                        <p data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="0" data-aos-duration="300"
+                            data-aos-easing="ease-in-out" data-aos-offset="50">Powerful and <span
+                                class="text-green-1">Feature-rich</span> </p>
+                        <p data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="300" data-aos-duration="300"
+                            data-aos-easing="ease-in-out" data-aos-offset="50">Database Management</p>
+                    </div>
 
 
-                    <p class="text-sm text-white lg:max-w-lg lg:pr-5 mb-16">With lots of research, going through
+                    <p class="text-sm text-white lg:max-w-lg lg:pr-5 mb-16" data-aos="fade-up"
+                        data-aos-easing="ease-in-out" data-aos-delay="600" data-aos-duration="300"
+                        data-aos-easing="ease-in-out" data-aos-offset="50">With lots of research, going through
                         multiple aspects of user experience and Database Management we have come up with the most
                         complete integrated Database Manager available in the market. Users can create unlimited number
                         of servers and databases and have easy access to every possible Database Management features.
                         With CloudStick, you get much more than all existing cloud providers, with the best value for
                         money</p>
 
-                    <a href="#"
+                    <a href="#" data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-delay="1000"
+                        data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-offset="50"
                         class="bg-1 px-[60px] py-3.5 rounded-lg text-sm text-white font-semibold inline-block">Migrate
                         now</a>
                 </div>
-                <div class="lg:w-1/2 2xl:w-7/12">
+                <div class="lg:w-1/2 2xl:w-7/12" data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-delay="1000"
+                    data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-offset="50">
                     <img src="./assets/images/database-heros-img.svg" alt=""
                         class="w-full max-w-2xl lg:max-w-3xl lg:min-w-[110%] 2xl:min-w-[711px] mx-auto lg:translate-x-[-10%] 2xl:-translate-x-32">
                 </div>
@@ -147,6 +159,15 @@
         </div>
     </section>
     <!-- Newsletter Section End -->
+
+    <!-- Aos js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 3000,
+        });
+    </script>
 </body>
 
 </html>

@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Aos CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Flickity.CSS -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
@@ -25,20 +28,31 @@
         <div class="container mx-auto px-6 xl:px-25 pb-24 lg:pb-[103px] pt-16">
             <div class="flex flex-col lg:flex-row items-center space-y-12 lg:space-y-0">
                 <div class="text-center lg:text-left max-w-xl w-full">
-                    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-46 font-bold text-white mb-12">Looking for a
-                        <span class="text-green-1">ServerPilot
-                            Alternative? </span>
-                    </h1>
-                    <p class="text-base text-white lg:max-w-md xl:pr-7 mb-12">Choose CloudStick and get 100% FREE
+                    <div
+                        class="text-2xl sm:text-3xl md:text-4xl 2xl:text-46 md:leading-[58px] font-bold text-white mb-12">
+                        <p data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="0" data-aos-duration="300"
+                            data-aos-easing="ease-in-out" data-aos-offset="50">Looking for a
+                            <span class="text-green-1">ServerPilot</span>
+                        </p>
+
+                        <p class="text-green-1" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="300"
+                            data-aos-duration="300" data-aos-easing="ease-in-out" data-aos-offset="50">Alternative? </p>
+                    </div>
+                    <p class="text-base text-white lg:max-w-md xl:pr-7 mb-12" class="text-green-1" data-aos="fade-up"
+                        data-aos-easing="ease-in-out" data-aos-delay="600" data-aos-duration="300"
+                        data-aos-easing="ease-in-out" data-aos-offset="50">Choose CloudStick and get 100% FREE
                         migration for all your accounts – completely risk-free. Our dedicated support team is well
                         equipped to assist you in all types of migrations – no matter how complex it is! Enjoy hassle
                         free Website Migration, with reduced downtime</p>
 
-                    <a href="#" class="bg-1 px-6 py-3.5 rounded-lg text-sm text-white font-semibold inline-block">Start
+                    <a href="#" data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-delay="1000"
+                        data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-offset="50"
+                        class="bg-1 px-6 py-3.5 rounded-lg text-sm text-white font-semibold inline-block">Start
                         a 10 Day free
                         trail</a>
                 </div>
-                <div class="w-full">
+                <div class="w-full" data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-delay="1000"
+                    data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-offset="50">
                     <img src="./assets/images/vultr-heros-img-2.svg" alt=""
                         class="w-full max-w-2xl lg:max-w-4xl mx-auto">
                 </div>
@@ -56,25 +70,45 @@
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-4">
             <div class="bg-white hover:shadow-2 ring-1 ring-gray-1 px-6 pt-6 pb-5 rounded-t-lg sm:rounded-tr-none">
-                <img src="./assets/images/vultr-icon-1.svg" alt="" class="w-[70px] mx-auto mb-4">
+                <div class="w-[70px] h-[70px] rounded-full relative overflow-hidden bg-[#3FC997] mx-auto mb-4">
+                    <img src="./assets/images/vultr-icon-1.svg" alt="" class="w-[70px] relative z-10">
+                    <div
+                        class="bg-gradient-to-t to-[#44D695] from-[#185FA5] w-ful h-full animate-colorChange absolute inset-0">
+                    </div>
+                </div>
                 <h5 class="text-lg sm:text-xl font-semibold text-dark-1 text-center mb-5">Individuals</h5>
                 <p class="text-sm sm:text-base text-center text-dark-1"><span class="font-medium">Our Vision</span> is
                     to make cloud server setup hassle free and seamless for everyone, with any level of expertise.</p>
             </div>
             <div class="bg-white hover:shadow-2 ring-1 ring-gray-1 px-6 pt-6 pb-5 sm:rounded-tr-lg lg:rounded-t-none">
-                <img src="./assets/images/vultr-icon-2.svg" alt="" class="w-[70px] mx-auto mb-4">
+                <div class="w-[70px] h-[70px] rounded-full relative overflow-hidden bg-[#3FC997] mx-auto mb-4">
+                    <img src="./assets/images/vultr-icon-2.svg" alt="" class="w-[70px] relative z-10">
+                    <div
+                        class="bg-gradient-to-t to-[#44D695] from-[#185FA5] w-ful h-full animate-colorChange absolute inset-0">
+                    </div>
+                </div>
                 <h5 class="text-lg sm:text-xl font-semibold text-dark-1 text-center mb-5">Individuals</h5>
                 <p class="text-sm sm:text-base text-center text-dark-1"><span class="font-medium">Our Vision</span> is
                     to make cloud server setup hassle free and seamless for everyone, with any level of expertise.</p>
             </div>
             <div class="bg-white hover:shadow-2 ring-1 ring-gray-1 px-6 pt-6 pb-5">
-                <img src="./assets/images/vultr-icon-3.svg" alt="" class="w-[70px] mx-auto mb-4">
+                <div class="w-[70px] h-[70px] rounded-full relative overflow-hidden bg-[#3FC997] mx-auto mb-4">
+                    <img src="./assets/images/vultr-icon-3.svg" alt="" class="w-[70px] relative z-10">
+                    <div
+                        class="bg-gradient-to-t to-[#44D695] from-[#185FA5] w-ful h-full animate-colorChange absolute inset-0">
+                    </div>
+                </div>
                 <h5 class="text-lg sm:text-xl font-semibold text-dark-1 text-center mb-5">Individuals</h5>
                 <p class="text-sm sm:text-base text-center text-dark-1"><span class="font-medium">Our Vision</span> is
                     to make cloud server setup hassle free and seamless for everyone, with any level of expertise.</p>
             </div>
             <div class="bg-white hover:shadow-2 ring-1 ring-gray-1 px-6 pt-6 pb-5 lg:rounded-tr-lg">
-                <img src="./assets/images/vultr-icon-4.svg" alt="" class="w-[70px] mx-auto mb-4">
+                <div class="w-[70px] h-[70px] rounded-full relative overflow-hidden bg-[#3FC997] mx-auto mb-4">
+                    <img src="./assets/images/vultr-icon-4.svg" alt="" class="w-[70px] relative z-10">
+                    <div
+                        class="bg-gradient-to-t to-[#44D695] from-[#185FA5] w-ful h-full animate-colorChange absolute inset-0">
+                    </div>
+                </div>
                 <h5 class="text-lg sm:text-xl font-semibold text-dark-1 text-center mb-5">Individuals</h5>
                 <p class="text-sm sm:text-base text-center text-dark-1"><span class="font-medium">Our Vision</span> is
                     to make cloud server setup hassle free and seamless for everyone, with any level of expertise.</p>
@@ -316,6 +350,15 @@
         </div>
     </section>
     <!-- CTA Section End -->
+
+    <!-- Aos js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 3000,
+        });
+    </script>
 
 </body>
 

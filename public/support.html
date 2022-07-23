@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Aos CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Flickity.CSS -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
@@ -26,16 +29,27 @@
         <div class="container  mx-auto px-6 xl:px-25 pb-10 lg:pb-14 pt-16">
             <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-12 lg:space-y-0">
                 <div class="text-center lg:text-left lg:w-1/2 2xl:w-5/12 2xl:min-w-[657px]">
-                    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-46 font-bold text-white mb-[60px]">We deliver
-                        our
-                        <span class="text-green-1">Support, Expertise and Guidance</span> 24x7
-                    </h1>
-                    <p class="text-sm text-white lg:max-w-lg lg:pr-5 mb-12">We would love to help with any questions,
+                    <div class="text-2xl sm:text-3xl md:text-4xl 2xl:text-46 font-bold text-white mb-[60px]">
+                        <p data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="0" data-aos-duration="300"
+                            data-aos-easing="ease-in-out" data-aos-offset="50">We deliver
+                            our
+                            <span class="text-green-1">Support,</span>
+                        </p>
+                        <p data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="300" data-aos-duration="300"
+                            data-aos-easing="ease-in-out" data-aos-offset="50"> <span class="text-green-1">Expertise and
+                                Guidance</span> </p>
+                        <p data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="600" data-aos-duration="300"
+                            data-aos-easing="ease-in-out" data-aos-offset="50"><span class="text-green-1">24x7</span>
+                    </div>
+                    <p class="text-sm text-white lg:max-w-lg lg:pr-5 mb-12" data-aos="fade-up"
+                        data-aos-easing="ease-in-out" data-aos-delay="900" data-aos-duration="300"
+                        data-aos-easing="ease-in-out" data-aos-offset="50">We would love to help with any questions,
                         feedback or issues you are having with CloudStick. We believe in providing expert guidance and
                         support when you need the most to meet even your most complex needs to help you get up and
                         running immediately.</p>
                 </div>
-                <div class="lg:w-1/2 2xl:w-7/12">
+                <div class="lg:w-1/2 2xl:w-7/12" data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-delay="1200"
+                    data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-offset="50">
                     <img src="./assets/images/support-heros-img.svg" alt=""
                         class="w-full max-w-2xl lg:max-w-3xl mx-auto">
                 </div>
@@ -177,6 +191,14 @@
     </section>
     <!-- Newsletter Section End -->
 
+    <!-- Aos js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 3000,
+        });
+    </script>
 </body>
 
 </html>

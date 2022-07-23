@@ -6,7 +6,7 @@
 <path d="M35.3867 15.9844H45.0846C49.5028 15.9844 53.0846 19.5661 53.0846 23.9844V43.9504C53.0846 48.3686 49.5028 51.9504 45.0846 51.9504H35.3867V15.9844Z" fill="#494949" fill-opacity="0.09"/>
 <path d="M24.692 41.888V37.928L36.464 21.08H42.332V37.496H45.5V41.888H42.332V47H37.292V41.888H24.692ZM37.616 26.48L30.236 37.496H37.616V26.48Z" fill="url(#paint1_linear_261_2215)"/>
 <defs>
-<linearGradient id="paint0_linear_261_2215" x1="34.8056" y1="-0.000114441" x2="34.8056" y2="67.3647" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_261_221" x1="34.8056" y1="-0.000114441" x2="34.8056" y2="67.3647" gradientUnits="userSpaceOnUse">
 <stop stop-color="#44D695"/>
 <stop offset="1" stop-color="#185FA5"/>
 </linearGradient>
