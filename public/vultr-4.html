@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Aos CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Flickity.CSS -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
@@ -25,20 +28,29 @@
         <div class="container mx-auto px-6 xl:px-25 pb-24 lg:pb-[103px] pt-16">
             <div class="flex flex-col lg:flex-row items-center lg:items-end space-y-12 lg:space-y-0">
                 <div class="text-center lg:text-left max-w-xl w-full lg:pb-16 xl:pb-28">
-                    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-46 font-bold text-white mb-9">Migration to
-                        CloudStick
-                        is <span class="text-green-1">Totally Free</span>
-                    </h1>
-                    <p class="text-sm text-white lg:max-w-lg lg:pr-5 mb-14 ">Choose CloudStick and get 100% FREE
+                    <div
+                        class="text-2xl sm:text-3xl md:text-4xl 2xl:text-46 md:leading-[58px] font-bold text-white mb-9">
+                        <p data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="0" data-aos-duration="300"
+                            data-aos-easing="ease-in-out" data-aos-offset="50">Migration to
+                            CloudStick</p>
+                        <p data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="300" data-aos-duration="300"
+                            data-aos-easing="ease-in-out" data-aos-offset="50"> is <span class="text-green-1">Totally
+                                Free</span></p>
+                    </div>
+                    <p class="text-sm text-white lg:max-w-lg lg:pr-5 mb-14 " data-aos="fade-up"
+                        data-aos-easing="ease-in-out" data-aos-delay="600" data-aos-duration="300"
+                        data-aos-easing="ease-in-out" data-aos-offset="50">Choose CloudStick and get 100% FREE
                         migration for all your accounts – completely risk-free. Our dedicated support team is well
                         equipped to assist you in all types of migrations – no matter how complex it is! Enjoy hassle
                         free Website Migration, with reduced downtime</p>
 
-                    <a href="#"
+                    <a href="#" data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-delay="1000"
+                        data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-offset="50"
                         class="bg-1 px-[60px] py-3.5 rounded-lg text-sm text-white font-semibold inline-block">Migrate
                         now</a>
                 </div>
-                <div class="w-full">
+                <div class="w-full" data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-delay="1000"
+                    data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-offset="50">
                     <img src="./assets/images/vultr-heros-img-4.svg" alt=""
                         class="w-full max-w-2xl lg:max-w-4xl mx-auto">
                 </div>
@@ -267,6 +279,15 @@
     </section>
     <!-- Newsletter Section End -->
 
+
+    <!-- Aos js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 3000,
+        });
+    </script>
 </body>
 
 </html>
