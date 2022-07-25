@@ -147,6 +147,22 @@
   opacity: 0;
 }
 
+.homepage-testmonial .is-selected .shape {
+  transform: translateY(0px);
+  color: #00173e;
+}
+
+.homepage-testmonial .is-selected .username {
+  color: #fff;
+}
+.homepage-testmonial .is-selected .desg {
+  color: #fff;
+}
+
+.homepage-testmonial .is-selected .paragraph {
+  color: #fff;
+}
+
 /* position dots in carousel */
 .homepage-testmonial .flickity-page-dots {
   top: 0px;
@@ -238,11 +254,6 @@
     width: 290px !important;
     height: 310px !important;
     min-height: 310px !important;
-  }
-
-  .homepage-testmonial .is-selected .shape {
-    transform: translateY(0px);
-    color: #00173e;
   }
 
   .homepage-testmonial .is-selected .cell-content {
