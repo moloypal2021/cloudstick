@@ -1102,6 +1102,10 @@ body{
   display: grid;
 }
 
+.contents{
+  display: contents;
+}
+
 .hidden{
   display: none;
 }
@@ -1480,6 +1484,10 @@ body{
 
 .max-w-xl{
   max-width: 36rem;
+}
+
+.max-w-\[350px\]{
+  max-width: 350px;
 }
 
 .grow{
@@ -1866,16 +1874,12 @@ body{
   background-image: linear-gradient(165.14deg, #1B67A4 -0.17%, #44D695 99.52%);
 }
 
-.bg-2{
-  background-image: linear-gradient(180deg, #0121AE 2%, #44D695 73.61%);
+.bg-10{
+  background-image: linear-gradient(180deg, #0121AE 2%, #3CBF98 66.32%);
 }
 
 .bg-3{
   background-image: linear-gradient(159.08deg, #1B67A4 24.15%, #44D695 100%);
-}
-
-.bg-10{
-  background-image: linear-gradient(180deg, #0121AE 2%, #3CBF98 66.32%);
 }
 
 .from-\[\#185FA5\]{
@@ -1904,6 +1908,21 @@ body{
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.object-fill{
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.object-top{
+  -o-object-position: top;
+     object-position: top;
+}
+
+.object-right{
+  -o-object-position: right;
+     object-position: right;
 }
 
 .p-3{
@@ -2023,6 +2042,16 @@ body{
 .px-8{
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .pb-24{
@@ -2779,6 +2808,11 @@ body{
   color: rgb(29 78 216 / var(--tw-text-opacity));
 }
 
+.hover\:text-blue-2:hover{
+  --tw-text-opacity: 1;
+  color: rgb(3 51 206 / var(--tw-text-opacity));
+}
+
 .hover\:underline:hover{
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -3022,6 +3056,12 @@ body{
     margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .sm\:space-x-8 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2rem * var(--tw-space-x-reverse));
+    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .sm\:rounded-tr-none{
     border-top-right-radius: 0px;
   }
@@ -3066,6 +3106,11 @@ body{
   .sm\:px-6{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .sm\:py-9{
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
   }
 
   .sm\:pb-20{
@@ -3151,6 +3196,11 @@ body{
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
+
+  .sm\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 768px){
@@ -3198,6 +3248,10 @@ body{
     margin-top: 3rem;
   }
 
+  .md\:mb-10{
+    margin-bottom: 2.5rem;
+  }
+
   .md\:w-6{
     width: 1.5rem;
   }
@@ -3242,6 +3296,12 @@ body{
     --tw-space-x-reverse: 0;
     margin-right: calc(2.5rem * var(--tw-space-x-reverse));
     margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:space-x-14 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(3.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(3.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:px-10{
@@ -3296,6 +3356,11 @@ body{
   .md\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .md\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .md\:leading-\[58px\]{
@@ -3545,6 +3610,10 @@ body{
     margin-bottom: 147px;
   }
 
+  .lg\:mb-11{
+    margin-bottom: 2.75rem;
+  }
+
   .lg\:block{
     display: block;
   }
@@ -3599,6 +3668,10 @@ body{
 
   .lg\:max-w-4xl{
     max-width: 56rem;
+  }
+
+  .lg\:max-w-none{
+    max-width: none;
   }
 
   .lg\:translate-x-\[-10\%\]{
@@ -3700,6 +3773,12 @@ body{
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .lg\:space-x-20 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(5rem * var(--tw-space-x-reverse));
+    margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .lg\:rounded-t-none{
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3721,9 +3800,19 @@ body{
     border-bottom-left-radius: 0px;
   }
 
+  .lg\:object-fill{
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+
   .lg\:px-14{
     padding-left: 3.5rem;
     padding-right: 3.5rem;
+  }
+
+  .lg\:py-11{
+    padding-top: 2.75rem;
+    padding-bottom: 2.75rem;
   }
 
   .lg\:pb-32{
@@ -3812,6 +3901,16 @@ body{
     font-size: 1.5rem;
     line-height: 2rem;
   }
+
+  .lg\:text-70{
+    font-size: 70px;
+    line-height: 105px;
+  }
+
+  .lg\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1280px){
@@ -3821,6 +3920,10 @@ body{
 
   .xl\:col-span-7{
     grid-column: span 7 / span 7;
+  }
+
+  .xl\:col-span-9{
+    grid-column: span 9 / span 9;
   }
 
   .xl\:m-8{
@@ -3911,6 +4014,14 @@ body{
 
   .xl\:pb-28{
     padding-bottom: 7rem;
+  }
+
+  .xl\:pr-8{
+    padding-right: 2rem;
+  }
+
+  .xl\:pr-20{
+    padding-right: 5rem;
   }
 
   .xl\:text-46{
